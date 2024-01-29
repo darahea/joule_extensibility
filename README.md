@@ -47,4 +47,4 @@ Run `sapdas deploy -c` to compile and deploy the assistant to your subaccount.
 Check out [the initial guide for our CLI tool](https://github.tools.sap/DAS-Samples/da-mc-developers-hands-on/tree/4-Play-with-your-Digital-Assistant) for more information.
 
 
-:information_source: Some steps of our [general starting guide](https://workzone.one.int.sap/site#workzone-home&/groups/bj5ax8gAxEkFxGXcO8EIWK/workpage_tabs/CJLmZVxErNiE8hM1ApNh1G) might be still relevant for you :) 
+:information_source: Some steps of our [general starting guide](https://workzone.one.int.sap/site#workzone-home&/groups/bj5ax8gAxEkFxGXcO8EIWK/workpage_tabs/CJLmZVxErNiE8hM1ApNh1G) might be still relevant for you to get started.
