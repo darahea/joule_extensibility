@@ -6,4 +6,4 @@ slots:
 
 target:
   type: function
-  name: fetch_weather_info
+  name: weather/fetch_weather_info

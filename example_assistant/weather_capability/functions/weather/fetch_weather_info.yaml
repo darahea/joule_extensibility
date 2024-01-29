@@ -10,7 +10,7 @@ action_groups:
           - name: unit
             value: m
       - type: dialog-function
-        name: lookup_location
+        name: weather/lookup_location
         parameters:
           - name: city
             value: "<? city ?>"
