@@ -1,8 +1,8 @@
 schema_version: 3.0.0 #DT Spec version
 
 metadata:
-  namespace: com.sap.das.dev
-  name: sample_capability
+  namespace: com.sap.das.demo
+  name: weather_example_capability
   version: 1.0.0
   display_name: "Weather Capability"
   description: >- 
