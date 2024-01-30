@@ -5,8 +5,6 @@ action_groups:
       - type: set-variables
         scripting_type: spel
         variables:
-          - name: api_key
-            value: "c322ef22435d40bfa2ef22435df0bfbe"
           - name: unit
             value: m
       - type: dialog-function
@@ -14,13 +12,11 @@ action_groups:
         parameters:
           - name: city
             value: "<? city ?>"
-          - name: api_key
-            value: "<? api_key ?>"
         result_variable: weather_location
       - type: api-request
         method: GET
         system_alias: WeatherService
-        path: /wx/forecast/daily/3day?placeid=<? weather_location.placeid ?>&units=<? unit ?>&language=en-US&format=json&apiKey=<? api_key ?>
+        path: /wx/forecast/daily/3day?placeid=<? weather_location.placeid ?>&units=<? unit ?>&language=en-US&format=json
         result_variable: weather_result
   - condition: weather_result.status_code == 200 
     actions:

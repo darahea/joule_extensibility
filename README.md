@@ -41,9 +41,11 @@ Type=HTTP
 Authentication=NoAuthentication
 ```
 
+Click on "New Property" to add the propery `URL.queries.apiKey` with value `c322ef22435d40bfa2ef22435df0bfbe`. This will automatically add the API Key as additional query parameter to all API calls.
+
 ### Compilation and Deployment
 
-Run `sapdas deploy -c` to compile and deploy the assistant to your subaccount.
+Run `sapdas deploy -c -n` to compile and deploy the assistant to your subaccount.
 Check out [the initial guide for our CLI tool](https://github.tools.sap/DAS-Samples/da-mc-developers-hands-on/tree/4-Play-with-your-Digital-Assistant) for more information.
 
 
