@@ -27,7 +27,9 @@ Fetching weather for a city and returning a response based on scripting.
 Follow the following steps to setup the example assistant.
 As a prerequisite you need to have all [prerequisite steps done as described](https://github.tools.sap/DAS-Samples/da-mc-developers-hands-on/tree/1-Setting-up-the-environment) resulting in the following steps achieved:
 - Subaccount with subscription to Digital Assistant
-- IDE Extension & CLI installed
+- IDE Extension & CLI installed 
+
+> Minimal CLI version required: **1.3.8**
 
 ### Destination
 
