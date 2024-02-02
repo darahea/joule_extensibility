@@ -32,6 +32,7 @@ As a prerequisite you need to have all [prerequisite steps done as described](ht
 - IDE Extension & CLI installed 
 
 > Minimal CLI version required: **1.3.8**
+>
 > Minimal IDE Extension version required for IDE support: **1.1.36**
 
 ### Destination
