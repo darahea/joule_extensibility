@@ -1,6 +1,8 @@
 # joule-functions-example
 This is a reference for an assistant build with the Joule Functions approach.
 
+If you want to adapt or build content on your own, consider the [Content Building Guideline](https://sap.sharepoint.com/:b:/r/teams/JouleFunctionsPilot/Shared%20Documents/General/Content_Building_Guideline_Joule_Functions.pdf?csf=1&web=1&e=OirLGA).
+
 ## Content
 
 ```
