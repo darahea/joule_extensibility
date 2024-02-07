@@ -15,6 +15,8 @@ If you want to adapt or build content on your own, consider the [Content Buildin
 ```
 
 
+> A more complex example for the flight search can be found in the branch: https://github.tools.sap/DAS-Samples/joule-functions-example/tree/fb_flight_search
+
 ## Use-Cases
 
 ### Weather Fetching
