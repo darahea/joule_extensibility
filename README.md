@@ -57,4 +57,4 @@ Run `sapdas deploy -c -n <assistant_name>` to compile and deploy the assistant t
 Check out [the initial guide for our CLI tool](https://github.tools.sap/DAS-Samples/da-mc-developers-hands-on/tree/4-Play-with-your-Digital-Assistant) for more information.
 
 
-:information_source: Some steps of our [general starting guide](https://workzone.one.int.sap/site#workzone-home&/groups/bj5ax8gAxEkFxGXcO8EIWK/workpage_tabs/CJLmZVxErNiE8hM1ApNh1G) might be still relevant for you to get started.
+:information_source: Most parts of our [SAP Help documentation](https://help.sap.com/docs/joule/service-guide/development?locale=en-US) are still relevant for you to get started.
