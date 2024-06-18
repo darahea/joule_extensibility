@@ -97,22 +97,6 @@ Finally, we add the joule function that will show the hello world message to the
 5. Define two action groups that will be executed based on the condition if the name is provided or not
 6. Add output messages that will be displayed in the chat window for both scenarios
 
-## Summary
-
-We have created an assistant and a function to our project. The overall project structure should look like this:
-
-```
-└── capabilities/ // assistant root
-    ├── da.sapdas.yaml  // assistant definition combining capabilities
-    └── helloworld/ // capability root
-        ├── functions // root for functions
-            └── helloworld/ // function folder
-                └── say_hello.yaml // hello world function
-        ├── scenarios // root for scenarios
-            └── hello_world.yml // hello world scenario
-        └── capability.sapdas.yaml // capability definition
-```
-
 ## Related Information 
 
 [Build a capability](https://help.sap.com/docs/joule/service-guide/build-capability)
