@@ -1,102 +1,78 @@
-# Hello World - Step 2: Create a new assistant and the "hello world" capability
+# Hello World - Step 2: Deploy the assistant and test the "hello world" capability
 
-In this step, we will create a new digital assistant.
-
-*Please note that the Joule IDE Extension does not support the latest schema and Joule functions yet. 
-For the moment, we will manually create the needed assets and update the tutorial later on when this functionality is available.*  
+In this step, we will test our new assistant and the "hello world" capability.
 
 ## Preview
 
+![image](assets/preview.png)
 
 ## Steps
 
-### capabilities/da.sapdas.yaml (NEW)
+## Optional: .env (NEW)
 
-```yaml
-schema_version: 3.0.0
-name: joule_assistant
-capabilities:
-  - type: local
-    folder: ./helloworld_capability
+```env
+JOULE_API_URL=
+JOULE_USERNAME=
+JOULE_PASSWORD=
+JOULE_AUTH_URL=
+JOULE_CLIENT_ID=
+JOULE_CLIENT_SECRET=
+JOULE_DEFAULT_IDP=<false|true, default false>
 ```
 
-We create a basic configuration file for our digital assistant. It defines a set of capabilities that the assistant can use.
+To make it easier to log in to the Joule CLI, you can optionally create an `.env` file in your project root directory and add the above content. The content for these parameters can be found in your SAP BTP account.
+Be sure to not check in this file to a code repository as it contains sensitive information, for example by adding it to a `.gitignore` file.
 
-1. Create a new folder in your project root directory and name it `capabilites`.
-2. Add a new file `da.sapdas.yaml` in the newly created folder
-2. set the schema version to `3.0.0`
-3. set the name to `joule_assistant`
-4. add a new capability of type `local` and set the folder to `./helloworld_capability`
+## Login to your BTP account
 
-### capabilities/helloworld/capability.sapdas.yaml (NEW)
-
-```yaml
-schema_version: 3.0.0
-
-metadata:
-  namespace: com.sap.das.demo
-  name: helloworld_capability
-  version: 1.0.0
-  display_name: "Hello World Capability"
-  description: "This capability says hello world."
+1. Open a terminal and go to the `capabilities` folder
+2. Run the following command to login to your BTP account:
+```bash 
+joule login
 ```
 
-We add a new hello world capability to our assistant by specifying the display name and the description:
+*Hint:* If you did not specify an `.env` file, you will be prompted to enter your credentials upon login. You can also pass the parameters with the respective command line options, type `joule login --help` for more information.
 
-1. Create a new subfolder in your `capabilites` folder and name it `helloworld`.
-2. Add a new file `capability.sapdas.yaml` in the newly created folder
-3. Copy the content above into the file
+2. Run the following command to deploy the assistant to the Joule server:
 
-### capabilities/helloworld/scenarios/hello_world.yaml (NEW)
+## Optional: Compile your assistant
 
-```yaml
-description: This function says hello world or the name of the user
-
-slots:
-- name: name
-  description: The name of the person to be greeted
-
-target:
-type: function
-name: helloworld/say_hello
-```
-Next, we define the scenario for the capability. It contains the parameters (slots) and the joule function to call.
-Be sure to provide a meaningful description for the function as this parameter will be used by the dialog model to find the function.
-
-1. Create a new folder in your `helloworld` folder and name it `scenarios`.
-2. Create a new file `hello_world.yaml` in the newly created folder
-1. Define a slot `name` that can be filled with a name in the prompt
-2. Define the target function `helloworld/say_hello` that will be called when the scenario is triggered
-
-### capabilities/helloworld/functions/helloworld/hello_world.yaml (NEW)
-
-```yaml
-parameters:
-  - name: name
-action_groups:
-  - condition: name != null
-    actions:
-      - type: message
-        message: 
-            type: text 
-            content: "Hello <? name ?> from joule function!"
-  - condition: param == nul
-    actions:
-      - type: message
-        message:
-            type: text
-            content: "Hello World from joule function!"
+1. Go to the 'helloworld` folder and run the following command to compile your assistant:
+```bash
+joule compile
 ```
 
-Finally, we add the joule function that will show the hello world message to the user. We use the `name` parameter to personalize the message. If it is filled, we greet the user with the name provided. If not, we just show a general "Hello World" message. 
+In case there are errors in your assistant, the compiler will show you the errors and you can fix them before deploying the assistant.
 
-1. Create a new folder in your `helloworld` folder and name it `functions`.
-2. Create a new folder `helloworld` in the newly created folder that will contain all functions for the hello world capability.
-3. Create a new file `hello_world.yaml` in the folder `helloworld`
-4. Define a parameter `name` as an input for the function that will be connected to the slot above
-5. Define two action groups that will be executed based on the condition if the name is provided or not
-6. Add output messages that will be displayed in the chat window for both scenarios
+## Deploy your assistant
+
+1. Run the following command in your `capabilities` folder to deploy your assistant:
+```bash
+joule deploy -n "helloworld"
+```
+
+Specify a name parameter with the `-n` option to give your assistant a name. This name will be used to identify your assistant in the Joule server and help to avoid conflicts with other assistants running on the same account.
+
+## Test your assistant in the command line
+
+1. Run the following command in your `capabilities` folder to test your assistant:
+```bash
+joule dialog helloworld "say hello world"  
+```
+
+You will receive a JSON response with the joule message "Hello World from joule function!".
+
+## Test your assistant in the standalone web client:
+
+1. Run the following command to open the standalone web client:
+```bash
+joule launch helloworld
+```
+2. A Browser will open with the joule web client. You can now test your assistant in the chat window.
+3. Type "what can you do" to see the available capabilities.
+4. Type "hello world" to trigger the hello world capability.
+5. Type "say hello <your name>" to trigger the hello world capability with your name.
 
 ## Related Information 
 
-[Build a capability](https://help.sap.com/docs/joule/service-guide/build-capability)
+[Test the capability](https://help.sap.com/docs/joule/service-guide/test-capability)
