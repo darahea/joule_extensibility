@@ -1,0 +1,15 @@
+parameters:
+  - name: name
+action_groups:
+  - condition: name != null
+    actions:
+      - type: message
+        message: 
+            type: text 
+            content: "Hello <? name ?> from joule function!"
+  - condition: param == nul
+    actions:
+      - type: message
+        message:
+            type: text
+            content: "Hello World from joule function!"
