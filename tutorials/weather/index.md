@@ -1,5 +1,7 @@
 # Joule Functions Weather Fetching Tutorial
 
+A joule function calling an external API to fetch weather data based on a given location.
+
 ## Steps
 
 * [Weather Fetching - Step 1: Setting up the destination](step1/index.md)

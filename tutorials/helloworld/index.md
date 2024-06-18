@@ -1,5 +1,7 @@
 # Joule Functions Hello World Tutorial
 
+Basic setup of the tools needed for Joule development and defining a very simple hello world capability.
+
 ## Steps
 
 * [Hello World - Step 1: Setting up the environment](step1/index.md)
