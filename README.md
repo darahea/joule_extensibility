@@ -17,7 +17,9 @@ If you want to adapt or build content on your own, consider the [Content Buildin
 
 > A more complex example for the flight search can be found in a dedicated [branch](https://github.tools.sap/DAS-Samples/joule-functions-example/tree/fb_flight_search).
 
-## HandsOn Joule Functions Tutorials
+## Joule Functions Tutorials
+
+You can choose between three different hands on tutorials:
 
 * [Hello World - Basic setup and defining a very simple hello world capability](helloworld/index.md)
 * [Weather - A joule function calling an external API](weather/index.md)
