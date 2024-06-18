@@ -20,6 +20,8 @@ capabilities:
     folder: ./helloworld_capability
 ```
 
+We create a basic configuration file for our digital assistant. It defines a set of capabilities that the assistant can use.
+
 1. Create a new folder in your project root directory and name it `capabilites`.
 2. Add a new file `da.sapdas.yaml` in the newly created folder
 2. set the schema version to `3.0.0`
@@ -33,42 +35,68 @@ schema_version: 3.0.0
 
 metadata:
   namespace: com.sap.das.demo
-  name: helloworld_example_capability
+  name: helloworld_capability
   version: 1.0.0
   display_name: "Hello World Capability"
-  description: >- 
-   This capability says hello world.
+  description: "This capability says hello world."
 ```
+
+We add a new hello world capability to our assistant by specifying the display name and the description:
 
 1. Create a new subfolder in your `capabilites` folder and name it `helloworld`.
 2. Add a new file `capability.sapdas.yaml` in the newly created folder
 3. Copy the content above into the file
 
+### capabilities/helloworld/scenarios/hello_world.yaml (NEW)
 
+```yaml
+description: This function says hello world or the name of the user
 
+slots:
+- name: name
+  description: The name of the person to be greeted
 
+target:
+type: function
+name: helloworld/say_hello
+```
+Next, we define the scenario for the capability. It contains the parameters (slots) and the joule function to call.
+Be sure to provide a meaningful description for the function as this parameter will be used by the dialog model to find the function.
 
+1. Create a new folder in your `helloworld` folder and name it `scenarios`.
+2. Create a new file `hello_world.yaml` in the newly created folder
+1. Define a slot `name` that can be filled with a name in the prompt
+2. Define the target function `helloworld/say_hello` that will be called when the scenario is triggered
 
+### capabilities/helloworld/functions/helloworld/hello_world.yaml (NEW)
 
+```yaml
+parameters:
+  - name: name
+action_groups:
+  - condition: name != null
+    actions:
+      - type: message
+        message: 
+            type: text 
+            content: "Hello <? name ?> from joule function!"
+  - condition: param == nul
+    actions:
+      - type: message
+        message:
+            type: text
+            content: "Hello World from joule function!"
+```
 
-### Joule IDE Extension installation
+Finally, we add the joule function that will show the hello world message to the user. We use the `name` parameter to personalize the message. If it is filled, we greet the user with the name provided. If not, we just show a general "Hello World" message. 
 
-If you use Visual Studio Code, follow the Joule IDE Extension installation guideline:
-https://help.sap.com/docs/joule/service-guide/joule-ide-extension
-
-Make sure that you see the IDE Extension in the plugin section:
-
-![image](assets/SAP.DAS.Wizard.png)
-
-### Joule Command Line Interface (CLI) installation
-
-Follow the Joule Command Line Interface installation guideline:
-https://help.sap.com/docs/joule/service-guide/sap-digital-assistant-command-line-interface
-
-Run the CLI command line tool by typing `joule` or `sapdas` in a shell:
-
-![image](assets/preview.png)
+1. Create a new folder in your `helloworld` folder and name it `functions`.
+2. Create a new folder `helloworld` in the newly created folder that will contain all functions for the hello world capability.
+3. Create a new file `hello_world.yaml` in the folder `helloworld`
+4. Define a parameter `name` as an input for the function that will be connected to the slot above
+5. Define two action groups that will be executed based on the condition if the name is provided or not
+6. Add output messages that will be displayed in the chat window for both scenarios
 
 ## Related Information 
 
-[Joule Development Guideline](https://help.sap.com/docs/joule/service-guide/development)
+[Build a capability](https://help.sap.com/docs/joule/service-guide/build-capability)
