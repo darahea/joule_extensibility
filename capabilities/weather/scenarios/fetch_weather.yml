@@ -1,4 +1,4 @@
-description: This function fetches the weather for a given city and provides intelligent responses to weather related topics
+description: This function fetches the weather for a given city
 
 slots:
   - name: city
@@ -6,18 +6,4 @@ slots:
 
 target:
   type: function
-  name: weather/fetch_weather_info
-
-response_context:
-  - value: timestamp
-    description: timestamp for next 4 days including today
-  - value: temparatureMax
-    description: maximum temperature for next 4 days incl. today
-  - value: temparatureMin
-    description: minimum temperature for next 4 days incl. today
-  - value: dayOfWeek
-    description: day of the week for next 4 days incl. today
-  - value: narrative
-    description: weather description for next 4 days incl. today
-  - value: city
-    description: city for which the weather has been fetched
+  name: fetch_weather_info
