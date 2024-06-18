@@ -48,8 +48,10 @@ In case there are errors in your assistant, the compiler will show you the error
 
 1. Run the following command in your `capabilities` folder to deploy your assistant:
 ```bash
-joule deploy -n "helloworld"
+joule deploy -c -n "helloworld"
 ```
+
+By specifying the `-c` option, you will compile the assistant before deploying it.
 
 Specify a name parameter with the `-n` option to give your assistant a name. This name will be used to identify your assistant in the Joule server and help to avoid conflicts with other assistants running on the same account.
 
