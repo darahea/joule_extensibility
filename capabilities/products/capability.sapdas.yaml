@@ -2,8 +2,7 @@ schema_version: 3.0.0 #DT Spec version
 
 metadata:
   namespace: com.sap.das.demo
-  name: northwind_example_capability
+  name: products_capability
   version: 1.0.0
   display_name: "Northwind Products Capability"
-  description: >- 
-   This capability says hello world.
+  description: This capability shows products from the Northwind example OData service.

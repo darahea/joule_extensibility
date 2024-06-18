@@ -2,4 +2,8 @@ schema_version: 3.0.0 #DT Spec version
 name: joule
 capabilities:
   - type: local
-    folder: ./helloworld_capability
+    folder: ./helloworld
+  - type: local
+    folder: ./weather
+#  - type: local
+#    folder: ./products

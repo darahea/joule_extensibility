@@ -5,8 +5,7 @@ metadata:
   name: weather_example_capability
   version: 1.0.0
   display_name: "Weather Capability"
-  description: >- 
-   This capability collects some simple scenarios.
+  description: This capability collects some simple scenarios.
 
 system_aliases:
   WeatherService:
