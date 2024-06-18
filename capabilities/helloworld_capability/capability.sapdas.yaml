@@ -1,0 +1,9 @@
+schema_version: 3.0.0 #DT Spec version
+
+metadata:
+  namespace: com.sap.das.demo
+  name: helloworld_example_capability
+  version: 1.0.0
+  display_name: "Hello World Capability"
+  description: >- 
+   This capability says hello world.
