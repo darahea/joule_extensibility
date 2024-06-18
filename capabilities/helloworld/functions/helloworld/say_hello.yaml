@@ -7,7 +7,7 @@ action_groups:
         message: 
             type: text 
             content: "Hello <? name ?> from joule function!"
-  - condition: param == nul
+  - condition: name == null
     actions:
       - type: message
         message:

@@ -1,5 +1,7 @@
 # Joule Functions Products Tutorial
 
+A more complex example showing products from the Northwind example OData service.
+
 ## Steps
 
 * [Northwind Products - Step 1: Setting up the destination](step1/index.md)

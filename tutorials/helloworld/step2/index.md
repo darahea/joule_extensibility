@@ -24,9 +24,9 @@ We create a basic configuration file for our digital assistant. It defines a set
 
 1. Create a new folder in your project root directory and name it `capabilites`.
 2. Add a new file `da.sapdas.yaml` in the newly created folder
-2. set the schema version to `3.0.0`
-3. set the name to `joule_assistant`
-4. add a new capability of type `local` and set the folder to `./helloworld_capability`
+2. Set the schema version to `3.0.0`
+3. Set the name to `joule_assistant`
+4. Add a new capability of type `local` and set the folder to `./helloworld_capability`
 
 ### capabilities/helloworld/capability.sapdas.yaml (NEW)
 
@@ -80,7 +80,7 @@ action_groups:
         message: 
             type: text 
             content: "Hello <? name ?> from joule function!"
-  - condition: param == nul
+  - condition: name == null
     actions:
       - type: message
         message:
