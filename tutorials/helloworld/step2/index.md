@@ -86,7 +86,7 @@ action_groups:
       - type: message
         message:
             type: text
-            content: "Hello World from joule function!"
+            content: "Hello world from joule function!"
 ```
 
 Finally, we add the joule function that will show the hello world message to the user. We use the `name` parameter to personalize the message. If it is filled, we greet the user with the name provided. If not, we just show a general "Hello World" message. 

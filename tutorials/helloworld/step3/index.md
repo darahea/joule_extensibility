@@ -8,7 +8,7 @@ In this step, we will test our new assistant and the "hello world" capability.
 
 ## Steps
 
-## Optional: .env (NEW)
+### Optional: .env (NEW)
 
 ```env
 JOULE_API_URL=
@@ -23,7 +23,7 @@ JOULE_DEFAULT_IDP=<false|true, default false>
 To make it easier to log in to the Joule CLI, you can optionally create an `.env` file in your project root directory and add the above content. The content for these parameters can be found in your SAP BTP account.
 Be sure to not check in this file to a code repository as it contains sensitive information, for example by adding it to a `.gitignore` file.
 
-## Login to your BTP account
+### Login to your BTP account
 
 1. Open a terminal and go to the `capabilities` folder
 2. Run the following command to login to your BTP account:
@@ -35,7 +35,7 @@ joule login
 
 2. Run the following command to deploy the assistant to the Joule server:
 
-## Optional: Compile your assistant
+### Optional: Compile your assistant
 
 1. Go to the 'helloworld` folder and run the following command to compile your assistant:
 ```bash
@@ -44,7 +44,7 @@ joule compile
 
 In case there are errors in your assistant, the compiler will show you the errors and you can fix them before deploying the assistant.
 
-## Deploy your assistant
+### Deploy your assistant
 
 1. Run the following command in your `capabilities` folder to deploy your assistant:
 ```bash
@@ -55,16 +55,16 @@ By specifying the `-c` option, you will compile the assistant before deploying i
 
 Specify a name parameter with the `-n` option to give your assistant a name. This name will be used to identify your assistant in the Joule server and help to avoid conflicts with other assistants running on the same account.
 
-## Test your assistant in the command line
+### Test your assistant in the command line
 
 1. Run the following command in your `capabilities` folder to test your assistant:
 ```bash
 joule dialog helloworld "say hello world"  
 ```
 
-You will receive a JSON response with the joule message "Hello World from joule function!".
+You will receive a JSON response with the joule message "Hello World from joule function!" in the console.
 
-## Test your assistant in the standalone web client:
+### Test your assistant in the standalone web client:
 
 1. Run the following command to open the standalone web client:
 ```bash
@@ -73,7 +73,7 @@ joule launch helloworld
 2. A Browser will open with the joule web client. You can now test your assistant in the chat window.
 3. Type "what can you do" to see the available capabilities.
 4. Type "hello world" to trigger the hello world capability.
-5. Type "say hello <your name>" to trigger the hello world capability with your name.
+5. Type "say hello \<your name\>" to trigger the hello world capability with your name.
 
 That's a wrap! You have successfully completed the Joule Hello World tutorial.
 
