@@ -1,6 +1,6 @@
 # Fetch Weather - Step 3: Create the weather API function call
 
-Now, we will define the dialog function making the external weather API call.
+Now, it is time to see how Joule makes API requests fetch the weather information from the external weather API.
 
 ## Preview
 
