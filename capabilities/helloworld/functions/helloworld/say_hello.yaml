@@ -13,4 +13,4 @@ action_groups:
       - type: message
         message:
             type: text
-            content: "Hello World from joule function!"
+            content: "Hello world from joule function!"
