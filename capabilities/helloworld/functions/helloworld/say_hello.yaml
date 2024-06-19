@@ -1,5 +1,6 @@
 parameters:
   - name: name
+    optional: true
 action_groups:
   - condition: name != null
     actions:

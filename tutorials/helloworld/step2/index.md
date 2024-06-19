@@ -73,6 +73,7 @@ Be sure to provide a meaningful description for the function as this parameter w
 ```yaml
 parameters:
   - name: name
+    optional: true
 action_groups:
   - condition: name != null
     actions:
@@ -93,7 +94,7 @@ Finally, we add the joule function that will show the hello world message to the
 1. Create a new folder in your `helloworld` folder and name it `functions`.
 2. Create a new folder `helloworld` in the newly created folder that will contain all functions for the hello world capability.
 3. Create a new file `hello_world.yaml` in the folder `helloworld`
-4. Define a parameter `name` as an input for the function that will be connected to the slot above
+4. Define an optional parameter `name` as an input for the function that will be connected to the slot above
 5. Define two action groups that will be executed based on the condition if the name is provided or not
 6. Add output messages that will be displayed in the chat window for both scenarios
 
@@ -112,6 +113,9 @@ We have created an assistant and a function to our project. The overall project 
             └── hello_world.yml // hello world scenario
         └── capability.sapdas.yaml // capability definition
 ```
+
+* [Back to Overview](../index.md)
+* [Continue with Step 2](step2.md)
 
 ## Related Information 
 

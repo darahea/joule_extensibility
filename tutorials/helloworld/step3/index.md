@@ -75,6 +75,10 @@ joule launch helloworld
 4. Type "hello world" to trigger the hello world capability.
 5. Type "say hello <your name>" to trigger the hello world capability with your name.
 
+That's a wrap! You have successfully completed the Joule Hello World tutorial.
+
+* [Back to Overview](../index.md)
+
 ## Related Information 
 
 [Test the capability](https://help.sap.com/docs/joule/service-guide/test-capability)
