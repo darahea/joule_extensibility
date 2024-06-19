@@ -7,9 +7,6 @@ For the moment, we will manually create the needed assets and update the tutoria
 
 ## Preview
 
-![image](assets/preview.png)
-
-* The project structure in Visual Studio Code
 
 ## Steps
 
