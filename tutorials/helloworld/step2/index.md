@@ -20,7 +20,7 @@ schema_version: 3.0.0
 name: joule_assistant
 capabilities:
   - type: local
-    folder: ./helloworld_capability
+    folder: ./helloworld
 ```
 
 We create a basic configuration file for our digital assistant. It defines a set of capabilities that the assistant can use.
@@ -29,7 +29,7 @@ We create a basic configuration file for our digital assistant. It defines a set
 2. Add a new file `da.sapdas.yaml` in the newly created folder
 2. Set the schema version to `3.0.0`
 3. Set the name to `joule_assistant`
-4. Add a new capability of type `local` and set the folder to `./helloworld_capability`
+4. Add a new capability of type `local` and set the folder to `./helloworld`
 
 ### capabilities/helloworld/capability.sapdas.yaml (NEW)
 
@@ -70,6 +70,9 @@ Be sure to provide a meaningful description for the function as this parameter w
 2. Create a new file `hello_world.yaml` in the newly created folder
 1. Define a slot `name` that can be filled with a name in the prompt
 2. Define the target function `helloworld/say_hello` that will be called when the scenario is triggered
+
+Note that we do not have to define dialogs and intents anymore with the new Joule architecture.
+The description of the scenario and the slots is sufficient to trigger the function implicitely.
 
 ### capabilities/helloworld/functions/helloworld/hello_world.yaml (NEW)
 
