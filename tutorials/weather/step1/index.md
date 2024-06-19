@@ -1,4 +1,4 @@
-# Hello World - Step 1: Setting up the environment
+# Fetch Weather - Step 1: Setting up the environment
 
 In this step, we will set up the destination to access the external weather API.
 
