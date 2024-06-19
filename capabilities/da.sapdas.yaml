@@ -1,5 +1,4 @@
-schema_version: 3.0.0 #DT Spec version
-name: joule
+schema_version: 3.0.0
 capabilities:
   - type: local
     folder: ./helloworld

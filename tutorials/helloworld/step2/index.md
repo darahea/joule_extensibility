@@ -110,14 +110,14 @@ We have created an assistant and a function to our project. The overall project 
 
 ```
 └── capabilities/ // assistant root
-    ├── da.sapdas.yaml  // assistant definition combining capabilities
-    └── helloworld/ // capability root
+    ├── helloworld/ // capability root
         ├── functions // root for functions
             └── helloworld/ // function folder
                 └── say_hello.yaml // hello world function
-        ├── scenarios // root for scenarios
+        ├── scenarios/ // root for scenarios
             └── hello_world.yml // hello world scenario
         └── capability.sapdas.yaml // capability definition
+    └── da.sapdas.yaml  // assistant definition combining capabilities
 ```
 
 * [Back to Overview](../index.md)

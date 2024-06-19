@@ -1,4 +1,4 @@
-# Hello World - Step 2: Create the weather capability and sceneario
+# Hello World - Step 3: Create the weather capability and sceneario
 
 In this step, we will add the new weather capability to our assistant.
 
