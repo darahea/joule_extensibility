@@ -23,16 +23,16 @@ https://help.sap.com/docs/joule/service-guide/initial-set-up
 In the subaccount where you set up Joule, go to `Instances & Subscriptions`and press on the Subscription `Joule`.
 A message "The service is up and running." should appear. Joule is now ready to use.
 
-### Joule IDE Extension installation
+### Install Joule IDE Extension
 
-If you use Visual Studio Code, follow the Joule IDE Extension installation guideline:
+If you are using Visual Studio Code, follow the Joule IDE Extension installation guideline:
 https://help.sap.com/docs/joule/service-guide/joule-ide-extension
 
 Make sure that you see the IDE Extension in the plugin section:
 
 ![image](assets/SAP.DAS.Wizard.png)
 
-### Joule Command Line Interface (CLI) installation
+### install Joule Command Line Interface (CLI) 
 
 Follow the Joule Command Line Interface installation guideline:
 https://help.sap.com/docs/joule/service-guide/sap-digital-assistant-command-line-interface
@@ -42,7 +42,7 @@ Run the CLI command line tool by typing `joule` or `sapdas` in a shell:
 ![image](assets/preview.png)
 
 * [Back to Overview](../index.md)
-* [Continue with Step 2](step2.md)
+* [Continue with Step 2](../step2/index.md)
 
 ## Related Information 
 
