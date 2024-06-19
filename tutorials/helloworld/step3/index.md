@@ -1,4 +1,4 @@
-# Hello World - Step 2: Deploy the assistant and test the "hello world" capability
+# Hello World - Step 3: Deploy the assistant and test the "hello world" capability
 
 In this step, we will test our new assistant and the "hello world" capability.
 

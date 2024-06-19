@@ -115,7 +115,7 @@ We have created an assistant and a function to our project. The overall project 
 ```
 
 * [Back to Overview](../index.md)
-* [Continue with Step 2](step2.md)
+* [Continue with Step 3](../step3/index.md)
 
 ## Related Information 
 
