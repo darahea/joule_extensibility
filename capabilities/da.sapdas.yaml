@@ -3,6 +3,6 @@ capabilities:
   - type: local
     folder: ./helloworld
   - type: local
-    folder: ./weather
+    folder: ./weather_response_gen
   #- type: local
   #  folder: ./products
