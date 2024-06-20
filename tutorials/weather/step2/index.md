@@ -1,4 +1,4 @@
-# Fetch Weather - Step 2: Create the weather capability and sceneario
+# Fetch Weather - Step 2: Create the weather capability and scenario
 
 In this step, we will add the new weather capability to our assistant.
 
@@ -17,7 +17,7 @@ For the moment, we will manually create the needed assets and update the tutoria
 
 
 ```yaml
-scvhema_version: 3.0.0
+schema_version: 3.0.0
 name: joule_assistant
 capabilities:
   - type: local
@@ -32,7 +32,7 @@ capabilities:
 ### capabilities/weather/capability.sapdas.yaml (NEW)
 
 ```yaml
-schema_version: 3.0.0
+schema_version: 3.3.0
 
 metadata:
   namespace: com.sap.das.demo
@@ -64,7 +64,7 @@ slots:
 
 target:
   type: function
-  name: weather/fetch_weather_info
+  name: fetch_weather_info
 ```
 Next, we define the scenario for the capability. It contains the parameters (slots) and the joule function to call.
 Be sure to provide a meaningful description for the function as this parameter will be used by the dialog model to find the function.
@@ -72,7 +72,7 @@ Be sure to provide a meaningful description for the function as this parameter w
 1. Create a new folder in your `weather` folder and name it `scenarios`.
 2. Create a new file `fetch_weather.yaml` in the newly created folder
 3. Define a slot `city` that can be filled with a city name for the weather request
-4. Define the target joule function `weather/fetch_weather_info` that will be called when the scenario is triggered
+4. Define the target joule function `fetch_weather_info` that will be called when the scenario is triggered
 
 Note that we do not have to define dialogs and intent structures anymore with the new Joule architecture.
 The description of the scenario and the slots is sufficient to trigger the function implicitely.
