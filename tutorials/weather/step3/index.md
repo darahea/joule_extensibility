@@ -10,10 +10,9 @@ Now, it is time to see how Joule makes API requests fetch the weather informatio
 
 ## Steps
 
-To organize the dialog functions better, create a folder called `weather` in the `functions` folder.
-We will now create `fetch_weather_info` and `lookup_location` functions within that folder.
+We will now create `fetch_weather_info` and `lookup_location` functions within the `functions` folder.
 
-### capabilities/weather/functions/weather/lookup_location.yaml (NEW)
+### capabilities/weather/functions/lookup_location.yaml (NEW)
 
 ```yaml
 parameters:
@@ -37,7 +36,7 @@ result:
   postalCode: <? postalCode ?>
 ```
 
-The `lookup_location` dialog helper function will be used to lookup the city entered by the user to a `placeid`, which is required for querying the weather information. A `city` parameter is required for this dialog function. In the actions of the dialog function, the GET call to the following endpoint should be performed by using the `WeatherService` system alias:
+The `lookup_location` dialog helper function will be used to look up the city entered by the user to a `placeid`, which is required for querying the weather information. A `city` parameter is required for this dialog function. In the actions of the dialog function, the GET call to the following endpoint should be performed by using the `WeatherService` system alias:
 
 ```/location/search?query=<? city ?>&language=en-US&format=json```
 
@@ -51,7 +50,7 @@ Following fields should be returned in the result of the dialog function (using 
 
 The postal code is extracted with a handlebars expression from the lookup result. As it is a nested JSON object, only the first element of the array is written to variable `postalCode`.
 
-### capabilities/weather/functions/weather/fetch_weather.yaml (NEW)
+### capabilities/weather/functions/fetch_weather.yaml (NEW)
 
 ```yaml
 parameters:
@@ -64,7 +63,7 @@ action_groups:
           - name: unit
             value: m
       - type: dialog-function
-        name: weather/lookup_location
+        name: lookup_location
         parameters:
           - name: city
             value: "<? city ?>"
@@ -103,15 +102,15 @@ As results of the dialog function the following fields should be returned:
 - success: boolean to indicate if the lookup was successful
 - minTemp / maxTemp: minimum and maximum temperature in celcius degrees for today
 - dayOfWeek: weekday of today
-- narrative: description of todays weather
+- narrative: description of today's weather
 
-In case the API returns an HTTTP status code of `200 - Success`, we compose a message with the weather information for the provided location.
+In case the API returns an HTTP status code of `200 - Success`, we compose a message with the weather information for the provided location.
 In case of an error, we return a message with the error details. 
 
 
 ## Summary
 
-We have now added the dialog functions to the external API to our project and we are ready to test it.
+We have now added the dialog functions to the external API to our project and are ready to test it.
 This will be covered in Step 4: The overall project structure should look like this:
 
 ```
@@ -119,9 +118,8 @@ This will be covered in Step 4: The overall project structure should look like t
     ├── helloworld... 
     └── weather/ // weather capability
         ├── functions/ // root for functions
-            └── weather/ // root for weather functions
-                ├── fetch_weather.yaml // weather function
-                └── lookup_location.yaml // location lookup helper function
+            ├── fetch_weather.yaml // weather function
+            └── lookup_location.yaml // location lookup helper function 
         ├── scenarios/ // root for scenarios
             └── fetch_weather.yml // weather scenario
         └── capability.sapdas.yaml // capability definition

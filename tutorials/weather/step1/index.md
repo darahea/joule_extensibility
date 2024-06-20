@@ -13,7 +13,7 @@ In this step, we will set up the destination to access the external weather API.
 
 ## Steps
 
-### Create Weather Destinaation
+### Create Weather Destination
 
 To access the external weather API, we need to configure a destination in your BTP account.
 
@@ -27,7 +27,7 @@ ProxyType=Internet
 Type=HTTP
 Authentication=NoAuthentication
 ```
-3. Press on "New Property" to add the propery `URL.queries.apiKey` with value `c322ef22435d40bfa2ef22435df0bfbe`. This will automatically add the API Key as additional query parameter to all API calls.
+3. Press on "New Property" to add the property `URL.queries.apiKey` with value `c322ef22435d40bfa2ef22435df0bfbe`. This will automatically add the API Key as additional query parameter to all API calls.
 
 * [Back to Overview](../index.md)
 * [Continue with Step 2](../step2/index.md)
