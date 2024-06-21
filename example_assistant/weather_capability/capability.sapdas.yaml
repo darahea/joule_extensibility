@@ -1,4 +1,4 @@
-schema_version: 3.0.0 #DT Spec version
+schema_version: 3.3.0 #DT Spec version
 
 metadata:
   namespace: com.sap.das.demo
