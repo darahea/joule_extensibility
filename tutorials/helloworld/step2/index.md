@@ -98,11 +98,10 @@ action_groups:
 Finally, we add the joule function that will show the hello world message to the user. We use the `name` parameter to personalize the message. If it is filled, we greet the user with the name provided. If not, we just show a general "Hello World" message. 
 
 1. Create a new folder in your `helloworld` folder and name it `functions`.
-2. Create a new folder `helloworld` in the newly created folder that will contain all functions for the hello world capability.
-3. Create a new file `hello_world.yaml` in the folder `helloworld`
-4. Define an optional parameter `name` as an input for the function that will be connected to the slot above
-5. Define two action groups that will be executed based on the condition if the name is provided or not
-6. Add output messages that will be displayed in the chat window for both scenarios
+2. Create a new file `hello_world.yaml` in the folder `helloworld` for the dialog function
+3. Define an optional parameter `name` as an input for the function that will be connected to the slot above
+4. Define two action groups that will be executed based on the condition if the name is provided or not 
+5. Add output messages that will be displayed in the chat window for both scenarios
 
 ## Summary
 
@@ -112,8 +111,7 @@ We have created an assistant and a function to our project. The overall project 
 └── capabilities/ // assistant root
     ├── helloworld/ // capability root
         ├── functions // root for functions
-            └── helloworld/ // function folder
-                └── say_hello.yaml // hello world function
+            └── say_hello.yaml // hello world function
         ├── scenarios/ // root for scenarios
             └── hello_world.yml // hello world scenario
         └── capability.sapdas.yaml // capability definition
