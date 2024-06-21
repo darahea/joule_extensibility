@@ -27,6 +27,7 @@ You can choose between three different hands on tutorials:
 
 ## All-in-one example
 
+1. Clone this repository to your local workspace.
 1. Go to the folder `capabilities` and run `joule login` to log in to your subaccount.
 2. Run `joule deploy -c -n <assistant_name>` to compile and deploy the assistant to your subaccount.
 3. Run `joule launch <assistant_name>` to test the assistant with all three capabilities.

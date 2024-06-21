@@ -1,4 +1,4 @@
-# Joule Functions Products Tutorial
+# Joule Functions Search Products Tutorial
 
 A more complex example showing products from the Northwind example OData service.
 
