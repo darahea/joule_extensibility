@@ -1,6 +1,6 @@
-# Fetch Weather - Step 5: Add response generation to your weather scenario
+# Fetch Weather - Step 5: Add response generation to your scenario
 
-In this step, we will remove the static messages in our assistant and enable dynamic and intelligent responses via GenAI response generation.
+In this step, we will remove the static messages in our dialog function and enable dynamic and intelligent responses via GenAI response generation.
 
 ## Preview
 
@@ -9,10 +9,6 @@ In this step, we will remove the static messages in our assistant and enable dyn
 *Our assistant is now capable of generating a response of various types specifically catered to the user utterance.*
 
 ## Steps
-
-### Add a result to your 'fetch_weather_info' dialog function
-
-Before we come to the actual response generation in the weather scenario, we will remove the static responses in the dialog function and expose the relevant parts of the weather api response as result variables.
 
 #### capabilities/weather/functions/fetch_weather_info.yaml
 
@@ -46,11 +42,10 @@ result:
   city: <? city ?>
 ```
 
-### Add a response context to your 'fetch_weather' scenario
+Before we come to the actual response generation in the weather scenario, we will remove the two `condition` sections with the static responses in the dialog function.
+Now we only expose the relevant parts of the weather API response as result variables and let the large language model create the response based on the user utterance.
 
-In order to enable genai response generation, we will add a response context section to our weather scenario. In the response context, we can reference the subset of result variables in the target function that shall be used for response generation. Additionally, we will add one description per variable which explains its meaning to the LLM. The more accurate this description is, the better the results of the generated responses will be.
-
-#### capabilities/weather/functions/fetch_weather_info.yaml
+### capabilities/weather/functions/fetch_weather_info.yaml
 
 ```yaml
 description: This function fetches the weather for a given city and provides intelligent responses to weather related topics
@@ -78,14 +73,19 @@ response_context:
     description: city for which the weather has been fetched
 ```
 
+In order to enable GenAI response generation, we will add a response context section to our weather scenario. In the response context, we can reference the subset of result variables in the target function that shall be used for response generation. 
+
+Additionally, we will add one description per variable which explains its meaning to the LLM. The more accurate this description is, the better the results of the generated responses will be.
+
 ### Test your assistant in the standalone web client:
 
-1. Run the following command to open the standalone web client:
+1. Run the following commands deploy the updated assistant and open the standalone web client:
 ```bash
+joule deploy -c -n "weather"
 joule launch weather
 ```
 2. A Browser will open with the joule web client. You can now test your assistant in the chat window.
-3. Play around with the intelligent and dynamic responses of your assistant. You may use utterances like "How is the weather today in Walldorf?", "Do I need a raincoat tomorrow?" or "Show me the weather for the upcoming days". Notice how we get a variety of responses for the same scenario depending on what exactly we want to know.
+3. Play around with the intelligent and dynamic responses of your assistant. You may use utterances like "How is the weather today in <city>?", "Do I need a raincoat tomorrow?" or "Show me the weather for the upcoming days". Notice how we get a variety of responses for the same scenario depending on what exactly we want to know.
 
 That's a wrap! You have successfully completed the Joule Weather tutorial.
 
