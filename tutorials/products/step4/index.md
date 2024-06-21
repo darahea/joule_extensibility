@@ -1,12 +1,12 @@
 # Search Products - Step 4: Deploy the assistant and test the "products" capability
 
-In this step, we will deploy the assistant test our new weather capability.
+In this step, we will deploy the assistant test our new product search capability.
 
 ## Preview
 
 **TODO: Add screenshot of running assistant**
 
-*Our assistant is now capable of fetching the weather for a given location.*
+*Our assistant can now search for and filter products from the Gateway demo service.*
 
 ## Steps
 
