@@ -22,8 +22,8 @@ If you want to adapt or build content on your own, consider the [Content Buildin
 You can choose between three different hands on tutorials:
 
 * [Hello World - Basic setup and defining a very simple hello world capability](tutorials/helloworld/index.md)
-* [Weather - Joule function calling an external API](tutorials/weather/index.md)
-* [Products - A more complex example showing products from an OData service](tutorials/products/index.md)
+* [Fetch Weather - Joule function calling an external API](tutorials/weather/index.md)
+* [Search Products - A more complex example showing products from an OData service](tutorials/products/index.md)
 
 ## All-in-one example
 

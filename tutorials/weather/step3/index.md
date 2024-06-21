@@ -35,6 +35,9 @@ result:
   placeid: <? lookup_result.body.location.placeId[0] ?>
   postalCode: <? postalCode ?>
 ```
+1. Create a folder `functions` in the `weather` capability.
+2. Create a file `lookup_location.yaml` in the `functions` folder of the `weather` capability.
+3. Copy the code above into the file and see the explanation for the helper function below. 
 
 The `lookup_location` dialog helper function will be used to look up the city entered by the user to a `placeid`, which is required for querying the weather information. A `city` parameter is required for this dialog function. In the actions of the dialog function, the GET call to the following endpoint should be performed by using the `WeatherService` system alias:
 
@@ -87,6 +90,9 @@ action_groups:
           content: "An error occurred when fetching the weather information. The result was: <? weather_result ?>"
 ```
 
+1. Create a file `fetch_weather.yaml` in the `functions` folder of the `weather` capability.
+2. Copy the code above into the new file and analyze the configuration of the service call.
+
 The `fetch_weather_info` dialog function will fetch the weather information for a given city and returns a message with the details to the user. 
 
 It requires a mandatory `city` parameter and executes the following actions:
@@ -111,7 +117,7 @@ In case of an error, we return a message with the error details.
 ## Summary
 
 We have now added the dialog functions to the external API to our project and are ready to test it.
-This will be covered in Step 4: The overall project structure should look like this:
+This will be covered in Step 4. The overall project structure should look like this:
 
 ```
 └── capabilities/ // assistant root

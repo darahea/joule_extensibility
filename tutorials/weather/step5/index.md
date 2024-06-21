@@ -2,6 +2,9 @@
 
 In this step, we will remove the static messages in our dialog function and enable dynamic and intelligent responses via GenAI response generation.
 
+*Please note that this step requires the latest joule features and schema version `3.3.0`.
+If the assistant does not compile, fall back to static response messages as defined in step 4!*
+
 ## Preview
 
 ![image](assets/preview.png)
@@ -74,8 +77,9 @@ response_context:
 ```
 
 In order to enable GenAI response generation, we will add a response context section to our weather scenario. In the response context, we can reference the subset of result variables in the target function that shall be used for response generation. 
-
 Additionally, we will add one description per variable which explains its meaning to the LLM. The more accurate this description is, the better the results of the generated responses will be.
+
+For your reference, we have added the result of this step to a separate folder `weather_response_generation` in the `capabilities` folder of this repository.
 
 ### Test your assistant in the standalone web client:
 

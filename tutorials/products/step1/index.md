@@ -1,4 +1,4 @@
-# Fetch Weather - Step 1: Setting up the environment
+# Search Products - Step 1: Setting up the environment
 
 In this step, we will set up the destination to access the external weather API.
 
@@ -21,6 +21,8 @@ The service is provided by the SAP Gateway Demo System ES5. To access the servic
 
 More information about the Gateway Demo system can he found in this blog:
 [Getting started with the SAP Gateway Demo System ES5](https://community.sap.com/t5/technology-blogs-by-sap/new-sap-gateway-demo-system-available/ba-p/13353480)
+
+*Note:* Alternatively, you can also use the [Northwind OData service](https://services.odata.org/V2/Northwind/Northwind.svc/) for this tutorial if you like to try another OData service.
 
 ### Create ES5 Destination
 

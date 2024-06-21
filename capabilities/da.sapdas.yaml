@@ -5,4 +5,4 @@ capabilities:
   - type: local
     folder: ./weather_response_gen
   - type: local
-    folder: ./products_response_gen
+    folder: ./products
