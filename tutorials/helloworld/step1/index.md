@@ -37,6 +37,10 @@ Make sure that you see the IDE Extension in the plugin section:
 Follow the Joule Command Line Interface installation guideline:
 https://help.sap.com/docs/joule/service-guide/sap-digital-assistant-command-line-interface
 
+In short, install the Joule CLI by running the following command:
+
+```npm install -g @sap/sapdas-cli --registry=https://int.repositories.cloud.sap/artifactory/api/npm/build-releases-npm```
+
 Run the CLI command line tool by typing `joule` or `sapdas` in a shell:
 
 ![image](assets/preview.png)
