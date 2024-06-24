@@ -34,6 +34,14 @@ You can choose between three different hands on tutorials:
 
 *Hint:* You must set up the corresponding destinations in your BTP account to make the capabilites `weather` and `products` work. Check the corresponding tutorials to see how.
 
+## Testing
+
+Please be aware that the current implementation of the Cucumber/Gherkin test
+framework is not yet fully working with the generated LLM responses in the new Joule architecture.
+Support for this is planned for the future, therefore we skip explaining tests here in these tutorials.
+
+If you are interested in the topic, check the existing [hands on material](https://github.tools.sap/DAS-Samples/da-mc-developers-hands-on/tree/8-Adding-Content-Tests).
+
 ## Related Information
 
 [SAP Help - Joule Development](https://help.sap.com/docs/joule/service-guide/development?locale=en-US)
