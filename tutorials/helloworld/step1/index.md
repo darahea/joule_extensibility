@@ -39,7 +39,7 @@ https://help.sap.com/docs/joule/service-guide/sap-digital-assistant-command-line
 
 In short, install the Joule CLI by running the following command:
 
-```npm install -g @sap/sapdas-cli --registry=https://int.repositories.cloud.sap/artifactory/api/npm/build-releases-npm```
+```npm install -g sapdas-cli --registry=https://int.repositories.cloud.sap/artifactory/api/npm/build-releases-npm```
 
 Run the CLI command line tool by typing `joule` or `sapdas` in a shell:
 
