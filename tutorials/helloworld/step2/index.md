@@ -61,7 +61,7 @@ slots:
 
 target:
 type: function
-name: helloworld/say_hello
+name: say_hello
 ```
 Next, we define the scenario for the capability. It contains the parameters (slots) and the joule function to call.
 Be sure to provide a meaningful description for the function as this parameter will be used by the dialog model to find the function.

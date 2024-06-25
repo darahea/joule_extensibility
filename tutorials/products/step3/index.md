@@ -52,7 +52,7 @@ action_groups:
             value: "{{odataFilter odata_filters}}"
       - type: api-request
         method: GET
-        system_alias: ES5
+        system_alias: ProductService
         path: "/EPM_REF_APPS_SHOP_SRV/Products?$format=json&$top=10<? filter_string != null ? '&$filter=' + filter_string : '' ?>"
         result_variable: product_results
 result:
