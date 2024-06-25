@@ -6,4 +6,4 @@ slots:
 
 target:
   type: function
-  name: helloworld/say_hello
+  name: say_hello
