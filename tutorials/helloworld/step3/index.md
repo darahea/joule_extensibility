@@ -8,15 +8,26 @@ In this step, we will test our new assistant and the "hello world" capability.
 
 ## Steps
 
+### Optional: Lookup login parameters in your BTP account
+
+To login to your BTP account and Joule service instance, you need to specify authentication parameters that can be found in your BTP subaccount:
+
+1. Go to `Services` and press `Instances and Subscriptions in the main menu of your BTP subaccount.
+2. Open the service instace `Joule`, the details for this service will open in the third column.
+3. In the `Services Keys` panel, press the three dots on the key entry and select `View`.
+4. A new popup with the credentials for this service will open, see the mapping to the fields in the `.ENV` file below.
+
+**Note:** If you cannot see the credentials, you may be mission permissions in the BTP subaccount or you need to create a new service key.
+
 ### Optional: .env (NEW)
 
 ```env
-JOULE_API_URL=
-JOULE_USERNAME=
-JOULE_PASSWORD=
-JOULE_AUTH_URL=
-JOULE_CLIENT_ID=
-JOULE_CLIENT_SECRET=
+JOULE_API_URL=<apiurl>
+JOULE_USERNAME=<youruser>
+JOULE_PASSWORD=<yourpassword>
+JOULE_AUTH_URL=<url>
+JOULE_CLIENT_ID=<clientid>
+JOULE_CLIENT_SECRET=<clientsecret>
 JOULE_DEFAULT_IDP=<false|true, default false>
 ```
 
