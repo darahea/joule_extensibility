@@ -31,8 +31,8 @@ action_groups:
       - type: set-variables
         variables:
           - name: odata_filters
-            value: "<? odata_filters.append(validate_category_result.filter) ?>"
-
+            value: "<? odata_filters.append(category) ?>"
+  
   - condition: product_name != null
     actions:
       - type: set-variables
@@ -70,7 +70,7 @@ The first action simply defines an empty `odata_filters` array. As both paramete
 In the two conditions below, we check if the user has provided a category or a product name. OData services require a `$filter` argument in a specific format to be passed to its endpoint.
 If you like to know more about querying and filtering OData services, please have a look at the [OData tutorial](https://www.odata.org/getting-started/basic-tutorial/#queryData).
 
-TODO: !!! explain `validate_category_result` helper function !!!
+***TODO: !!! explain `validate_category_result` helper function, does not work yet !!!***
 
 If a `product_name` has been specified, we set a search filter on the OData property 'Name' that will be later composed to the expression `substringof('Name', '<product_name>') eq 'true'`.
 The `name_filter` helper variable is used to store the filter object for this configuration.

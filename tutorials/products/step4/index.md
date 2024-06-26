@@ -30,9 +30,10 @@ Specify a name parameter with the `-n` option to give your assistant a name. Thi
 joule launch products
 ```
 2. A Browser will open with the joule web client. You can now test your assistant in the chat window.
-3. Type "Search for products" to call the new capability.
-
-**TODO: Add a useful example query here**
+3. Type `Search for products` to call the new capability.
+4. Type `Show products in category Smartphones & Tablets` to search for a specific category
+5. Type `Show details of the first one` to get more details about the first entry of the result list.
+6. Type `Show the Maxi Tablet` to ask for a specific article
 
 * [Back to Overview](../index.md)
 
