@@ -16,7 +16,7 @@ For the moment, we will manually create the needed assets and update the tutoria
 ### capabilities/da.sapdas.yaml (NEW)
 
 ```yaml
-schema_version: 3.0.0
+schema_version: 1.0.0
 name: joule_assistant
 capabilities:
   - type: local

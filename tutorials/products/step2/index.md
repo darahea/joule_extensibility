@@ -2,8 +2,8 @@
 
 In this step, we will add the new products capability to our assistant.
 
-*Please note that the Joule IDE Extension does not support the latest schema and Joule functions yet. 
-For the moment, we will manually create the needed assets and update the tutorial later on when this functionality is available.*  
+*Please note that the Joule IDE Extension does not support the latest schema and Joule functions yet.
+For the moment, we will manually create the needed assets and update the tutorial later on when this functionality is available.*
 
 ## Preview
 
@@ -17,7 +17,7 @@ For the moment, we will manually create the needed assets and update the tutoria
 
 
 ```yaml
-schema_version: 3.0.0
+schema_version: 1.0.0
 name: joule_assistant
 capabilities:
   - type: local
@@ -58,12 +58,7 @@ We add a new weather capability to our assistant by specifying the display name 
 ### capabilities/weather/scenarios/fetch_product.yml (NEW)
 
 ```yaml
-description: Returns product information and answers detailed questions on ratings, price, technical specifications and supplier
-slots:
-  - name: product_name
-    description: Name of the product
-  - name: category
-    description: Product Category
+description: Search for products and answers detailed questions on ratings, price, technical specifications and supplier
 
 target:
   type: function
@@ -74,17 +69,15 @@ response_context:
     value: products
 ```
 
-Again, we define the scenario for the capability. It contains two parameters (slots) for the product name and the category that can be used for filtering the products.
+Again, we define the scenario for the capability. It contains one parameter (slot) for the product name can be used for filtering the products.
 Be sure to provide a meaningful description for the function as this parameter will be used by the dialog model to dispatch the user utterance to the right joule function.
 
 1. Create a new folder in your `products` folder and name it `scenarios`.
 2. Create a new file `fetch_products.yaml` in the newly created folder
-3. Define a slot `product_name` that can be filled with a product to search for
-4. Define a slot `category` that can be filled with a product category to filter the results
-5. Define the target joule function `fetch_product_info` that will be called when the scenario is triggered
+4. Define the target joule function `fetch_product_info` that will be called when the scenario is triggered
 
 As in the previous example, we simply define a `response_context` that will be used to present the response to the user.
-The `description` fields in this fill will help Joule toidentify the corresponding function and create a matching response.
+The `description` fields in this fill will help Joule to identify the corresponding function and create a matching response.
 
 ## Summary
 
@@ -105,6 +98,6 @@ The overall project structure should look like this:
 * [Back to Overview](../index.md)
 * [Continue with Step 3](../step3/index.md)
 
-## Related Information 
+## Related Information
 
 [Build a capability](https://help.sap.com/docs/joule/service-guide/build-capability)

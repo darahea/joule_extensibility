@@ -32,7 +32,7 @@ To access the products API we use in this tutorial, we need to configure a desti
 2. Press on `New Destination` and fill in the following information:
 
 ```properties
-URL=https://sapes5.sapdevcenter.com
+URL=https://sapes5.sapdevcenter.com/sap/opu/odata/sap
 Name=ES5
 ProxyType=Internet
 Type=HTTP
