@@ -127,7 +127,7 @@ This will be covered in Step 4. The overall project structure should look like t
             ├── fetch_weather.yaml // weather function
             └── lookup_location.yaml // location lookup helper function 
         ├── scenarios/ // root for scenarios
-            └── fetch_weather.yml // weather scenario
+            └── fetch_weather.yaml // weather scenario
         └── capability.sapdas.yaml // capability definition
     └── da.sapdas.yaml  // assistant definition combining capabilities
 ```

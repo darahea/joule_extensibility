@@ -113,7 +113,7 @@ We have created an assistant and a function to our project. The overall project 
         ├── functions // root for functions
             └── say_hello.yaml // hello world function
         ├── scenarios/ // root for scenarios
-            └── hello_world.yml // hello world scenario
+            └── hello_world.yaml // hello world scenario
         └── capability.sapdas.yaml // capability definition
     └── da.sapdas.yaml  // assistant definition combining capabilities
 ```

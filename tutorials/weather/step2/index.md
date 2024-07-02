@@ -87,7 +87,7 @@ This will be covered in Step 3. The overall project structure should look like t
     ├── helloworld... 
     └── weather/ // weather capability
         ├── scenarios/ // root for scenarios
-            └── fetch_weather.yml // weather scenario
+            └── fetch_weather.yaml // weather scenario
         └── capability.sapdas.yaml // capability definition
     └── da.sapdas.yaml  // assistant definition combining capabilities
 ```

@@ -55,7 +55,7 @@ We add a new weather capability to our assistant by specifying the display name 
 3. Define the basic parameters for this capability as shown above
 4. In the `system_aliases` we reference the BTP destination `ES5` with the alias `ProductService`.
 
-### capabilities/weather/scenarios/fetch_product.yml (NEW)
+### capabilities/weather/scenarios/fetch_product.yaml (NEW)
 
 ```yaml
 description: Search for products and answers detailed questions on ratings, price, technical specifications and supplier
@@ -89,7 +89,7 @@ The overall project structure should look like this:
     ├── helloworld... 
     └── products/ // products capability
         ├── scenarios/ // root for scenarios
-            └── fetch_product.yml // products scenario
+            └── fetch_product.yaml // products scenario
         └── capability.sapdas.yaml // capability definition
     └── weather... // weather capability
     └── da.sapdas.yaml  // assistant definition combining capabilities
