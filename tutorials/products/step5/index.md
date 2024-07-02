@@ -84,14 +84,33 @@ result:
 
 1. Copy the code of the final version of our function with error handling above.
 2. We added two conditions after the service call
-3. The first condition checks if the service call's status code was successfull or the result is null - this corresponds to a technical error with the service.
+3. The first condition checks if the service call's status code was successful or the result is null - this corresponds to a technical error with the service.
 4. The second condition checks if the result array is empty, e.g. if no products were found by the service - this is simply checking for an empty result set.
-5. In both cases we set the varibale `error_message` with a meaningful description of the problem.
-6. Finally, we return the `error_message` in addition to the the `products` array as the result of the function.
+5. In both cases we set the variable `error_message` with a meaningful description of the problem.
+6. Finally, we return the `error_message` in addition to the `products` array as the result of the function.
+
+### capabilities/products/scenarios/fetch_product.yml
+
+```yaml
+description: Search for products and answers detailed questions on ratings, price, technical specifications and supplier
+slots:
+  - name: product_name
+    description: Name of the product
+
+target:
+  type: function
+  name: fetch_product_info
+
+response_context:
+  - description: Product details to be displayed
+    value: products
+  - description: Error message in case the product service fails
+    value: error_message
+```
+
+1. Reference the `error_message` result variable in the response context and give it a meaningful description. The LLM is now able to provide a more meaningful answer in case no data was returned from the backend.
 
 ## Test your result
-
-**Note:** In its current feature set, Joule will not use the error message we provide. This is a bug that is currently beeing fixed. 
 
 1. To test the technical error, you can add a typo anywhere in the service path
 
@@ -100,16 +119,16 @@ result:
 joule deploy -c -n "products"
 ```
 
-4. Run the following command to open the standalone web client:
+3. Run the following command to open the standalone web client:
 ```bash
 joule launch "products"
 ```
-1. A Browser will open with the joule web client. You can now test your assistant in the chat window.
-2. Type `Search for Notebooks` to trigger the failing API url
-3. You should see the error message `An error occured when fetching products`
-4. Revert the type and redeploy the assistant
-5. Type `Show HT-9999 product` to search for a product that does not exist
-3. You should see the message `No products found`
+4. A Browser will open with the joule web client. You can now test your assistant in the chat window.
+5. Type `Search for Notebooks` to trigger the failing API url
+6. You should see a dynamic error message indicating that an error occurred during fetching
+7. Revert the type and redeploy the assistant
+8. Type `Show HT-9999 product` to search for a product that does not exist
+9. You should see a dynamic error message indicating that no product was found
 
 * [Back to Overview](../index.md)
 

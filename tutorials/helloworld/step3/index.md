@@ -22,7 +22,7 @@ To login to your BTP account and Joule service instance, you need to specify aut
 ### Login to your BTP account
 
 1. Open a terminal and go to the `capabilities` folder
-2. Run the following command to login to your BTP account:
+2. Run the following command to log in to your BTP account:
 ```bash
 joule login --apiurl '<apiurl>' -a '<url>' -c '<clientid>' -s '<clientsecret>' -u '<youruser>' -p '<yourpassword>'
 ```
