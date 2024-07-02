@@ -19,30 +19,15 @@ To login to your BTP account and Joule service instance, you need to specify aut
 
 **Note:** If you cannot see the credentials, you may be mission permissions in the BTP subaccount or you need to create a new service key.
 
-### Optional: .env (NEW)
-
-```env
-JOULE_API_URL=<apiurl>
-JOULE_USERNAME=<youruser>
-JOULE_PASSWORD=<yourpassword>
-JOULE_AUTH_URL=<url>
-JOULE_CLIENT_ID=<clientid>
-JOULE_CLIENT_SECRET=<clientsecret>
-JOULE_DEFAULT_IDP=<false|true, default false>
-```
-
-To make it easier to log in to the Joule CLI, you can optionally create an `.env` file in your project root directory and add the above content. The content for these parameters can be found in your SAP BTP account.
-Be sure to not check in this file to a code repository as it contains sensitive information, for example by adding it to a `.gitignore` file.
-
 ### Login to your BTP account
 
 1. Open a terminal and go to the `capabilities` folder
 2. Run the following command to login to your BTP account:
-```bash 
-joule login
+```bash
+joule login --apiurl '<apiurl>' -a '<url>' -c '<clientid>' -s '<clientsecret>' -u '<youruser>' -p '<yourpassword>'
 ```
 
-*Hint:* If you did not specify an `.env` file, you will be prompted to enter your credentials upon login. You can also pass the parameters with the respective command line options, type `joule login --help` for more information.
+*Hint:* Check the help for all available command line options, type `joule login --help`.
 
 2. Run the following command to deploy the assistant to the Joule server:
 
