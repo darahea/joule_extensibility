@@ -1,4 +1,4 @@
-# joule-functions-example (WORK IN PROGRESS - TO BE FINALIZED SOON - PRODUCTS TUTORIAL IS NOT FULLY WORKING YET)
+# joule-functions-example
 
 This is a reference for an assistant build with the Joule Functions approach.
 For instructions on all three examples please check the corresponding tutorials below.
