@@ -10,7 +10,7 @@ Now we will add a filter for the product name that is sent to the OData service.
 
 ## Steps
 
-### capabilities/products/scenarios/fetch_product.yml
+### capabilities/products/scenarios/fetch_product.yaml
 
 ```yaml
 description: Search for products and answers detailed questions on ratings, price, technical specifications and supplier
@@ -30,7 +30,7 @@ response_context:
 We now add a parameter (slots) for the product name that can be used for searching specific products.
 Be sure to provide a meaningful description for the function as this parameter will be used by the dialog model to dispatch the user utterance to the right joule function.
 
-1. Add the `product_name` slot to the `fetch_product.yml` scenario in the `products` capability and give a meaningful description.
+1. Add the `product_name` slot to the `fetch_product.yaml` scenario in the `products` capability and give a meaningful description.
 
 ### capabilities/products/functions/fetch_product_info.yaml
 

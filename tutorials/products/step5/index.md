@@ -10,7 +10,7 @@ In this step, we will deploy the assistant test our final product search capabil
 
 ## Steps
 
-### capabilities/products/scenarios/fetch_product.yml
+### capabilities/products/scenarios/fetch_product.yaml
 
 ```yaml
 description: Search for products and answers detailed questions on ratings, price, technical specifications and supplier
@@ -89,7 +89,7 @@ result:
 5. In both cases we set the variable `error_message` with a meaningful description of the problem.
 6. Finally, we return the `error_message` in addition to the `products` array as the result of the function.
 
-### capabilities/products/scenarios/fetch_product.yml
+### capabilities/products/scenarios/fetch_product.yaml
 
 ```yaml
 description: Search for products and answers detailed questions on ratings, price, technical specifications and supplier
