@@ -63,16 +63,16 @@ target:
 type: function
 name: say_hello
 ```
-Next, we define the scenario for the capability. It contains the parameters (slots) and the joule function to call.
-Be sure to provide a meaningful description for the function as this parameter will be used by the dialog model to find the function.
+Next, we define the scenario for the capability. It contains the parameters (slots) and the dialog function to call.
+Be sure to provide a meaningful description for the scenario as this parameter will be included in the prompt for scenario selection.
 
 1. Create a new folder in your `helloworld` folder and name it `scenarios`.
 2. Create a new file `hello_world.yaml` in the newly created folder
-1. Define a slot `name` that can be filled with a name in the prompt
-2. Define the target function `helloworld/say_hello` that will be called when the scenario is triggered
+3. Define a slot `name` that can be filled with a name in the prompt
+4. Define the target function `functions/hello_world` that will be called when the scenario is triggered
 
 Note that we do not have to define dialogs and intents anymore with the new Joule architecture.
-The description of the scenario and the slots is sufficient to trigger the function implicitely.
+The description of the scenario and the slots is sufficient to trigger the function implicitly.
 
 ### capabilities/helloworld/functions/hello_world.yaml (NEW)
 

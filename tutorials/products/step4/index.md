@@ -6,7 +6,7 @@ Now we will add a filter for the product name that is sent to the OData service.
 
 ![image](assets/preview.png)
 
-*The project with the fetch product sdialog function added*
+*The project with the fetch product dialog function added*
 
 ## Steps
 
@@ -72,9 +72,9 @@ result:
 1. Update the `fetch_product_info.yaml` function in the `products` capability with the new logic for defining the filter.
 2. We add a new `parameters` section with a parameter for the product name.
 3. We start by defining an empty `odata_filters` array.
-3. We check if the user has provided a product name. If so, we set a search filter on the OData property 'Name'.
-4. We use the handlebars helper function `odataFilter` to convert and concatenate the filters in the correct format.
-5. We append the concatenated filter string in the variable `filter_string` to the OData endpoint
+4. We check if the user has provided a product name. If so, we set a search filter on the OData property 'Name'.
+5. We use the handlebars helper function `odataFilter` to convert and concatenate the filters in the correct format.
+6. We append the concatenated filter string in the variable `filter_string` to the OData endpoint
 
 Let's break down the new code into more details: First, we have the new parameter which is marked as optional. The user can specify a product to filter the results set with this parameter. 
 The first action simply defines an empty `odata_filters` array. As the parameter is optional, we only add the corresponding filter to the array if needed in the next block.
@@ -113,7 +113,7 @@ joule launch "products"
 5. Enter `HT-1000` to just get the details for a specific product
 
 * [Back to Overview](../index.md)
-* [Continue with Step 4](../step4/index.md)
+* [Continue with Step 5](../step5/index.md)
 
 ## Related Information 
 

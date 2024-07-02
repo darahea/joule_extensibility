@@ -1,8 +1,9 @@
 # joule-functions-example
 
-This is a reference for an assistant build with the Joule Functions approach.
-For instructions on all three examples please check the corresponding tutorials below.
+In this repository, you will find a reference for an assistant built with the Joule Functions approach.
+We will explain how to define a scenario using an LLM-based dialog management and response generation.
 
+For instructions on all three examples please check the corresponding tutorials below.
 If you want to adapt or build content on your own, consider the [Content Building Guideline](https://sap.sharepoint.com/:b:/r/teams/JouleFunctionsPilot/Shared%20Documents/General/Content_Building_Guideline_Joule_Functions.pdf?csf=1&web=1&e=OirLGA).
 
 ## Content

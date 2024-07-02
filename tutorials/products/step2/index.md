@@ -89,7 +89,7 @@ The overall project structure should look like this:
     ├── helloworld... 
     └── products/ // products capability
         ├── scenarios/ // root for scenarios
-            └── fetch_products.yml // products scenario
+            └── fetch_product.yml // products scenario
         └── capability.sapdas.yaml // capability definition
     └── weather... // weather capability
     └── da.sapdas.yaml  // assistant definition combining capabilities

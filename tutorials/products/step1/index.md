@@ -1,6 +1,6 @@
 # Search Products - Step 1: Setting up the environment
 
-In this step, we will set up the destination to access the external weather API.
+In this step, we will set up the destination to access the SAP Gateway Demo System.
 
 ## Preview
 

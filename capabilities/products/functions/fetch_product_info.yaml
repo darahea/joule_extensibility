@@ -1,21 +1,12 @@
 parameters:
   - name: product_name
     optional: true
-  - name: category
-    optional: true
 action_groups:
   - actions:
       - type: set-variables
         variables:
           - name: odata_filters
             value: []
-  - condition: category != null
-    actions:
-      - type: set-variables
-        variables:
-          - name: odata_filters
-            value: "<? odata_filters.append(validate_category_result.filter) ?>"
-
   - condition: product_name != null
     actions:
       - type: set-variables
@@ -36,8 +27,20 @@ action_groups:
       - type: api-request
         method: GET
         system_alias: ProductService
-        path: "/EPM_REF_APPS_SHOP_SRV/Products?$format=json&$top=10<? filter_string != null ? '&$filter=' + filter_string : '' ?>"
+        path: "/EPM_REF_APPS_SHOP_SRV/Products?$format=json&$top=5<? filter_string != null ? '&$filter=' + filter_string : '' ?>"
         result_variable: product_results
+  - condition: product_results == null || product_results.status_code != 200
+    actions:
+      - type: set-variables
+        variables:
+          - name: error_message
+            value: An error occured when fetching products
+  - condition: product_results != null && product_results.body.d.results.size() == 0
+    actions:
+      - type: set-variables
+        variables:
+          - name: error_message
+            value: No products found
 result:
-  error_message: <? error_message ?>
+  error_message: "<? error_message ?>"
   products: <? product_results.body.d.results ?>
