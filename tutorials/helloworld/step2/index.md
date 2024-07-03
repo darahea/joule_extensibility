@@ -74,7 +74,7 @@ Be sure to provide a meaningful description for the scenario as this parameter w
 Note that we do not have to define dialogs and intents anymore with the new Joule architecture.
 The description of the scenario and the slots is sufficient to trigger the function implicitly.
 
-### capabilities/helloworld/functions/hello_world.yaml (NEW)
+### capabilities/helloworld/functions/say_hello.yaml (NEW)
 
 ```yaml
 parameters:
