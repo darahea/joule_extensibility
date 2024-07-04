@@ -29,8 +29,6 @@ joule login --apiurl '<apiurl>' -a '<url>' -c '<clientid>' -s '<clientsecret>' -
 
 *Hint:* Check the help for all available command line options, type `joule login --help`.
 
-2. Run the following command to deploy the assistant to the Joule server:
-
 ### Optional: Compile your assistant
 
 1. Go to the 'helloworld` folder and run the following command to compile your assistant:
