@@ -30,10 +30,10 @@ https://help.sap.com/docs/joule/service-guide/joule-ide-extension
 
 Make sure that you see the IDE Extension in the plugin section:
 
+![image](assets/SAP.DAS.Wizard.png)
+
 **Note:** This step is marked as optional, as the Joule IDE Extension does not support the latest schema and Joule functions yet. For now you won't need the extension so don't worry if it doesn't install.
 For the moment, we will manually create the needed assets and update the tutorial to use the IDE extension later on when this functionality is available.
-
-![image](assets/SAP.DAS.Wizard.png)
 
 ### Install Joule Command Line Interface (CLI) 
 
