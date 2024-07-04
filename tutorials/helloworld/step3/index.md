@@ -15,7 +15,7 @@ To login to your BTP account and Joule service instance, you need to specify aut
 1. Go to `Services` and press `Instances and Subscriptions in the main menu of your BTP subaccount.
 2. Open the service instace `Joule`, the details for this service will open in the third column.
 3. In the `Services Keys` panel, press the three dots on the key entry and select `View`.
-4. A new popup with the credentials for this service will open, see the mapping to the fields in the `.ENV` file below.
+4. A new popup with the credentials for this service will open, see the mapping to the fields in the command below.
 
 **Note:** If you cannot see the credentials, you may be mission permissions in the BTP subaccount or you need to create a new service key.
 
