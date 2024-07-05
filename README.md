@@ -49,7 +49,7 @@ Type=HTTP
 Authentication=NoAuthentication
 ```
 
-Click on "New Property" to add the propery `URL.queries.apiKey` with value `c322ef22435d40bfa2ef22435df0bfbe`. This will automatically add the API Key as additional query parameter to all API calls.
+Click on "New Property" to add the property `URL.queries.apiKey` with value `c322ef22435d40bfa2ef22435df0bfbe`. This will automatically add the API Key as additional query parameter to all API calls.
 
 ### Compilation and Deployment
 
