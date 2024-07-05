@@ -1,60 +1,51 @@
 # joule-functions-example
-This is a reference for an assistant build with the Joule Functions approach.
 
+In this repository, you will find a reference for an assistant built with the Joule Functions approach.
+We will explain how to define a scenario using an LLM-based dialog management and response generation.
+
+For instructions on all three examples please check the corresponding tutorials below.
 If you want to adapt or build content on your own, consider the [Content Building Guideline](https://sap.sharepoint.com/:b:/r/teams/JouleFunctionsPilot/Shared%20Documents/General/Content_Building_Guideline_Joule_Functions.pdf?csf=1&web=1&e=OirLGA).
+
+**Disclaimer:** Joule Functions are supported with spec version `3.x.x` and will not be made available on staging landscape, as it's not a productive landscape and planned to be decommissioned. Please use internal prod landscape instead, which is now available on BTP Canary `eu12` - so you can subscribe it in the same subaccount you're already using for staging and then remove the staging subscription. The required entitlements are showing up as `das-application-canary` and `das-service-canary` in SAP BTP Control Center. If you are unsure on which landscape, type the command `joule status` and check the API url.
 
 ## Content
 
 ```
-└── example_assistant/ // Assistant root
-    ├── da.sapdas.yaml  // Assistant definition combining capabilities
-    └── weather_capability/ // Capability root
-        ├── functions // Root for functions
-        ├── scenarios // Root for scenarios
-        └── capability.sapdas.yaml // Capability definition with System Aliases
+└── capabilities/ // assistant root
+    ├── da.sapdas.yaml  // assistant definition combining capabilities
+    ├── helloworld/ // a very simple hello world capability
+    ├── weather/ // a capability calling an external API
+    └── products/ // a more comeplex example showing products from an OData service
+    
 ```
-
 
 > A more complex example for the flight search can be found in a dedicated [branch](https://github.tools.sap/DAS-Samples/joule-functions-example/tree/fb_flight_search).
 
-## Use-Cases
+## Joule Functions Tutorials
 
-### Weather Fetching
+You can choose between three different hands on tutorials:
 
-Fetching weather for a city and returning a response based on scripting.
+* [Hello World - Basic setup and defining a very simple hello world capability](tutorials/helloworld/index.md)
+* [Fetch Weather - Joule function calling an external API](tutorials/weather/index.md)
+* [Search Products - A more complex example showing products from an OData service](tutorials/products/index.md)
 
-![weather_example.png](weather_example.png)
+## All-in-one example
 
+1. Clone this repository to your local workspace.
+1. Go to the folder `capabilities` and run `joule login` to log in to your subaccount.
+2. Run `joule deploy -c -n <assistant_name>` to compile and deploy the assistant to your subaccount.
+3. Run `joule launch <assistant_name>` to test the assistant with all three capabilities.
 
-## Setup
+*Hint:* You must set up the corresponding destinations in your BTP account to make the capabilites `weather` and `products` work. Check the corresponding tutorials to see how.
 
-Follow the following steps to setup the example assistant.
-As a prerequisite you need to have all [prerequisite steps done as described](https://github.tools.sap/DAS-Samples/da-mc-developers-hands-on/tree/1-Setting-up-the-environment) resulting in the following steps achieved:
-- Subaccount with subscription to Digital Assistant
-- IDE Extension & CLI installed 
+## Testing
 
-> Minimal CLI version required: **1.3.8**
->
-> Minimal IDE Extension version required for IDE support: **1.1.36**
+Please be aware that the current implementation of the Cucumber/Gherkin test
+framework is not yet fully working with the generated LLM responses in the new Joule architecture.
+Support for this is planned for the future, therefore we skip explaining tests here in these tutorials.
 
-### Destination
+If you are interested in the topic, check the existing [hands on material](https://github.tools.sap/DAS-Samples/da-mc-developers-hands-on/tree/8-Adding-Content-Tests).
 
-Create a destination with the following settings in your subaccount:
+## Related Information
 
-```properties
-URL=https://api.weather.com/v3
-Name=WEATHER
-ProxyType=Internet
-Type=HTTP
-Authentication=NoAuthentication
-```
-
-Click on "New Property" to add the property `URL.queries.apiKey` with value `c322ef22435d40bfa2ef22435df0bfbe`. This will automatically add the API Key as additional query parameter to all API calls.
-
-### Compilation and Deployment
-
-Run `sapdas deploy -c -n <assistant_name>` to compile and deploy the assistant to your subaccount.
-Check out [the initial guide for our CLI tool](https://github.tools.sap/DAS-Samples/da-mc-developers-hands-on/tree/4-Play-with-your-Digital-Assistant) for more information.
-
-
-:information_source: Most parts of our [SAP Help documentation](https://help.sap.com/docs/joule/service-guide/development?locale=en-US) are still relevant for you to get started.
+[SAP Help - Joule Development](https://help.sap.com/docs/joule/service-guide/development?locale=en-US)

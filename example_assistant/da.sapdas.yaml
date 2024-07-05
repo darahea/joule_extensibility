@@ -1,5 +1,0 @@
-schema_version: 3.0.0 #DT Spec version
-name: my_example_assistant
-capabilities:
-  - type: local
-    folder: ./weather_capability

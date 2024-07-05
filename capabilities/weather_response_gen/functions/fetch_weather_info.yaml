@@ -8,7 +8,7 @@ action_groups:
           - name: unit
             value: m
       - type: dialog-function
-        name: weather/lookup_location
+        name: lookup_location
         parameters:
           - name: city
             value: "<? city ?>"
@@ -20,8 +20,8 @@ action_groups:
         result_variable: weather_result
 result:
   timestamp: <? weather_result.body.validTimeLocal ?>
-  temparatureMax: <? weather_result.body.temperatureMax ?>
-  temparatureMin: <? weather_result.body.temperatureMin ?>
+  temperatureMax: <? weather_result.body.temperatureMax ?>
+  temperatureMin: <? weather_result.body.temperatureMin ?>
   dayOfWeek: <? weather_result.body.dayOfWeek ?>
   narrative: <? weather_result.body.narrative ?>
   city: <? city ?>

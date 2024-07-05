@@ -2,18 +2,18 @@ description: This function fetches the weather for a given city and provides int
 
 slots:
   - name: city
-    description: The name of the city used in its country
+    description: Weather information fetched for this city
 
 target:
   type: function
-  name: weather/fetch_weather_info
+  name: fetch_weather_info
 
 response_context:
   - value: timestamp
     description: timestamp for next 4 days including today
-  - value: temparatureMax
+  - value: temperatureMax
     description: maximum temperature for next 4 days incl. today
-  - value: temparatureMin
+  - value: temperatureMin
     description: minimum temperature for next 4 days incl. today
   - value: dayOfWeek
     description: day of the week for next 4 days incl. today
