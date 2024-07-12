@@ -60,8 +60,8 @@ slots:
   description: The name of the person to be greeted
 
 target:
-type: function
-name: say_hello
+  type: function
+  name: say_hello
 ```
 Next, we define the scenario for the capability. It contains the parameters (slots) and the dialog function to call.
 Be sure to provide a meaningful description for the scenario as this parameter will be included in the prompt for scenario selection.
