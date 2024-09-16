@@ -1,0 +1,68 @@
+action_groups:
+  - actions:
+      - type: set-variables
+        variables:
+          - name: api_response_data
+            value:
+              [
+                {
+                  "first_name": "John",
+                  "last_name": "Doe",
+                  "employee_number": 1001,
+                  "email_address": "john.doe@example.com",
+                  "phone_number": "+1234567890",
+                  "web_url": "https://www.example.com/john-doe",
+                  "job_title": "Software Developer",
+                  "job_description": "Responsible for designing, coding, and maintaining software applications. Collaborates with cross-functional teams to define, design, and ship new features. Ensures the performance, quality, and responsiveness of applications.",
+                  "availability": "available"
+                },
+                {
+                  "first_name": "Jane",
+                  "last_name": "Smith",
+                  "employee_number": 1002,
+                  "email_address": "jane.smith@example.com",
+                  "phone_number": "+0987654321",
+                  "web_url": "https://www.example.com/jane-smith",
+                  "job_title": "DevOps Engineer",
+                  "job_description": "Works on deployment and network operations. Helps to automate and streamline the company’s operations and processes. Ensures the reliability and scalability of applications.",
+                  "availability": "out of office"
+                },
+                {
+                  "first_name": "Alice",
+                  "last_name": "Johnson",
+                  "employee_number": 1003,
+                  "email_address": "alice.johnson@example.com",
+                  "phone_number": "+1122334455",
+                  "web_url": "https://www.example.com/alice-johnson",
+                  "job_title": "Frontend Developer",
+                  "job_description": "Specializes in creating responsive and interactive user interfaces. Works with design and backend teams to develop and integrate features. Optimizes web applications for speed and scalability.",
+                  "availability": "available"
+                },
+                {
+                  "first_name": "Bob",
+                  "last_name": "Brown",
+                  "employee_number": 1004,
+                  "email_address": "bob.brown@example.com",
+                  "phone_number": "+6677889900",
+                  "web_url": "https://www.example.com/bob-brown",
+                  "job_title": "Backend Developer",
+                  "job_description": "Develops and maintains server-side logic. Ensures high performance and responsiveness to requests from the frontend. Manages database operations and integrations.",
+                  "availability": "away"
+                },
+                {
+                  "first_name": "Carol",
+                  "last_name": "Davis",
+                  "employee_number": 1005,
+                  "email_address": "carol.davis@example.com",
+                  "phone_number": "+4455667788",
+                  "web_url": "https://www.example.com/carol-davis",
+                  "job_title": "QA Engineer",
+                  "job_description": "Responsible for ensuring the quality of software products through meticulous testing and quality assurance processes. Collaborates with development teams to identify and resolve defects.",
+                  "availability": "available"
+                }
+              ]
+
+result:
+  api_response: <? api_response_data ?>
+  subtitle: Overview
+  description: Peer employees short overview

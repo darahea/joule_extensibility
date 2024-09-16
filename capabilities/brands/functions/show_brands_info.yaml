@@ -1,0 +1,147 @@
+action_groups:
+  - actions:
+      - type: set-variables
+        variables:
+          - name: api_response_data
+            value:
+              [
+                  {
+                    "brand_id":1,
+                    "name":"Louis Vuitton",
+                    "founded":1854,
+                    "headquarters":{
+                        "city":"Paris",
+                        "country":"France"
+                    },
+                    "products":[
+                        {
+                          "type":"Handbags",
+                          "price_range":"High"
+                        },
+                        {
+                          "type":"Clothing",
+                          "price_range":"High"
+                        }
+                    ],
+                    "founder":{
+                        "name":"Louis Vuitton",
+                        "birth_year":1821
+                    },
+                    "revenue":"15 billion USD",
+                    "icons":[
+                        "https://example.com/icons/louis_vuitton_1.png"
+                    ]
+                  },
+                  {
+                    "brand_id":2,
+                    "name":"Chanel",
+                    "founded":1910,
+                    "headquarters":{
+                        "city":"Paris",
+                        "country":"France"
+                    },
+                    "products":[
+                        {
+                          "type":"Perfume",
+                          "price_range":"High"
+                        },
+                        {
+                          "type":"Clothing",
+                          "price_range":"High"
+                        }
+                    ],
+                    "founder":{
+                        "name":"Coco Chanel",
+                        "birth_year":1883
+                    },
+                    "revenue":"10 billion USD",
+                    "icons":[
+                        "sap-icon://brand-one"
+                    ]
+                  },
+                  {
+                    "brand_id":3,
+                    "name":"Gucci",
+                    "founded":1921,
+                    "headquarters":{
+                        "city":"Florence",
+                        "country":"Italy"
+                    },
+                    "products":[
+                        {
+                          "type":"Handbags",
+                          "price_range":"High"
+                        },
+                        {
+                          "type":"Shoes",
+                          "price_range":"High"
+                        }
+                    ],
+                    "founder":{
+                        "name":"Guccio Gucci",
+                        "birth_year":1881
+                    },
+                    "revenue":"9 billion USD",
+                    "icons":[
+                        "sap-icon://brand-two"
+                    ]
+                  },
+                  {
+                    "brand_id":4,
+                    "name":"Hermès",
+                    "founded":1837,
+                    "headquarters":{
+                        "city":"Paris",
+                        "country":"France"
+                    },
+                    "products":[
+                        {
+                          "type":"Handbags",
+                          "price_range":"High"
+                        },
+                        {
+                          "type":"Scarves",
+                          "price_range":"High"
+                        }
+                    ],
+                    "founder":{
+                        "name":"Thierry Hermès",
+                        "birth_year":1801
+                    },
+                    "revenue":"8 billion USD",
+                    "icons":[
+                        "data:image/png;base64,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"
+                    ]
+                  },
+                  {
+                    "brand_id":5,
+                    "name":"Prada",
+                    "founded":1913,
+                    "headquarters":{
+                        "city":"Milan",
+                        "country":"Italy"
+                    },
+                    "products":[
+                        {
+                          "type":"Handbags",
+                          "price_range":"High"
+                        },
+                        {
+                          "type":"Clothing",
+                          "price_range":"High"
+                        }
+                    ],
+                    "founder":{
+                        "name":"Mario Prada",
+                        "birth_year":1883
+                    },
+                    "revenue":"4 billion USD",
+                    "icons":[
+                        "data:image/png;base64,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"
+                    ]
+                  }
+              ]
+result:
+  api_response: <? api_response_data ?>
+  subtitle: Overview
+  description: Peer employees short overview

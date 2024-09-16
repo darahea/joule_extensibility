@@ -1,0 +1,8 @@
+schema_version: 3.3.0
+
+metadata:
+  namespace: com.sap.das.demo
+  name: show_brands_example
+  version: 1.0.0
+  display_name: "Show Brands Capability"
+  description: Show popular luxury brands.

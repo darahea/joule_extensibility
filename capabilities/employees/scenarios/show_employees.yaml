@@ -1,0 +1,13 @@
+description: This function shows employees info
+
+target:
+  type: function
+  name: show_employees_info
+
+response_context:
+  - value: api_response
+    description: the user's peer employees
+  - value: subtitle
+    description: Subtitle for peer employees list
+  - value: description
+    description: Description for peer employees list
