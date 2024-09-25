@@ -2,7 +2,7 @@ description: This function shows employees info
 
 target:
   type: function
-  name: show_employees_info
+  name: get_employees_with_buttons
 
 response_context:
   - value: employees_api_response

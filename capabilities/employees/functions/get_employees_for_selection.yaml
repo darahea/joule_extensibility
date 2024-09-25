@@ -1,0 +1,43 @@
+action_groups:
+  - actions:
+      - type: set-variables
+        variables:
+          - name: api_response_data
+            value:
+              {
+                "employees": [
+                  {
+                    "first_name": "John",
+                    "last_name": "Doe",
+                    "employee_number": 1001,
+                    "email_address": "john.doe@example.com",
+                    "job_title": "Software Developer",
+                    "job_description": "Responsible for designing, coding, and maintaining software applications. Collaborates with cross-functional teams to define, design, and ship new features. Ensures the performance, quality, and responsiveness of applications.",
+                    "availability": "available",
+                    "image": "https://as2.ftcdn.net/v2/jpg/03/64/21/11/1000_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg"
+                  },
+                  {
+                    "first_name": "Jane",
+                    "last_name": "Smith",
+                    "employee_number": 1002,
+                    "email_address": "jane.smith@example.com",
+                    "job_title": "DevOps Engineer",
+                    "job_description": "Works on deployment and network operations. Helps to automate and streamline the company’s operations and processes. Ensures the reliability and scalability of applications.",
+                    "availability": "out of office",
+                    "image": "https://www.corporatephotographylondon.com/wp-content/uploads/2019/11/HKstrategies-1210-1024x683.jpg"
+                  },
+                  {
+                    "first_name": "Alice",
+                    "last_name": "Johnson",
+                    "employee_number": 1003,
+                    "email_address": "alice.johnson@example.com",
+                    "job_title": "Frontend Developer",
+                    "job_description": "Specializes in creating responsive and interactive user interfaces. Works with design and backend teams to develop and integrate features. Optimizes web applications for speed and scalability.",
+                    "availability": "available",
+                    "image": "data:image/gif;base64,R0lGODlhtAC0APMAAHZ2dnt7e4GBgYmJiZWVlaGhoa+vr7Ozs7q6uszMzNPT09zc3Obm5uvr6/X19f///yH5BAQAAAAAIf8LSW1hZ2VNYWdpY2sOZ2FtbWE9MC40NTQ1NDUALAAAAAC0ALQAAAT/EMhJq7046827/2AojmRpnmiqrmzrvnAsz3Rt33iu73zv/8CgcEgsGo/IpHLJbDqf0Kh0Sq1ar9isdsvter/gsHhMLpvP6LR6zW673/C4fE6v2+/4vH7P7/v/gIGCg4SFhoeIiYqLjI2Oj5CRkpOUjwMHCgsNDw8NCwkHA5UwAgibnKipnAwIAqMqAQiqs7MOCAGvJgUOtL2qDgW5I7K+xakIwh8BCr0KBgQDAQEDBAbMtAq4yRvXqbbaGLG8qgrbGsSpCa4dAgmzyOYWBbMHIgezwfETAeOo+SLzvIGLh45TvRL3jukDIKDfgwQo3KFysM5cQYooGiqMx2AjioIM/+INUDXQRABVorYl5FRuxYJUB5NJ5GSAhYF05l6iIsCCQKoF5k5xSqliJKoG5kiyOJkqaaqSJ5iiCpqKaAqjnJBu08mJ5wqfqIBu6/ag5oqbqFomW/lAbQquD2IKw8oJKgmpQ+MJfQDvYyqtFr1VLKERVd9tAlRBPDGT0+BtBeOaYMt3IQB+qv6FCDjRbjLOqOR6oPxA88LIDx9naPfOcgWynL5pEDfLrevLsNM+izatWm6Wni2jNkbr8O0Ku4j3AnZ89vBisptvKLW3FyvV0jVcynTKEyir2Sls16Tcl/dQrqmXX4/qurlY7ON7uyUsufz7sU1Leo6fvfFHyzSzW/9wG/RmTTMEIpJbdEsh4BBLkaCmjgysqfJfIqAZZANp+h2CWSodxpChAwkGEploNVB2ISGFcbKYDo1hlMhF2NXQYmWJdGSYDyAlQtcDJcqA1wPgDcKWbTvAhaIgjZnlA1ouIgKXVz6AxYlYhuxVpA50AVaIUj8MiYgqQpB5iJlAoPllU0GoSYibPcApiJw70AmInTng6YeeN/DJh581AKqHoDMQioehMSBqh6IvMEqHoy1AKoekK1AKh6UpYOqGpidwykZ/oMY3ZqikEjdqqajScmqqrHKyaquphifrrLTWauutuOaq66689urrr8AGK+ywxBZr7LHIJqvsssw26+wes9BGK+201FZr7bXYZqvtttx26+234IYr7rjkNhEBADs="
+                  }
+                ]
+              }
+
+result:
+  employees_api_response: <? api_response_data.employees ?>
