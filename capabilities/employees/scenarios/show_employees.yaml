@@ -5,5 +5,7 @@ target:
   name: show_employees_info
 
 response_context:
-  - value: api_response
+  - value: employees_api_response
     description: peer employees
+  - value: buttons_api_response
+    description: cross product navigation to each peer employee
