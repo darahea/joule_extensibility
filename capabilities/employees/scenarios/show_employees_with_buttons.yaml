@@ -5,7 +5,7 @@ target:
   name: get_employees_with_buttons
 
 response_context:
-  - value: employees_api_response
+  - value: employees
     description: peer employees
-  - value: buttons_api_response
+  - value: ibn_targets
     description: cross product navigation to each peer employee

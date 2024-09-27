@@ -5,5 +5,5 @@ target:
   name: get_employees_for_selection
 
 response_context:
-  - value: employees_api_response
+  - value: employees
     description: peer employees
