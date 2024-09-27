@@ -1,0 +1,60 @@
+action_groups:
+  - actions:
+      - type: set-variables
+        variables:
+          - name: cars_api_response
+            value:
+              [
+                {
+                  "make": "BMW",
+                  "model": "3 Series G20",
+                  "year": 2023,
+                  "vin": "WBA5R1C56LF123456",
+                  "price": 42000,
+                  "mileage": 5000,
+                  "color": "Alpine White",
+                  "engine_type": "2.0L I4 Turbo",
+                  "transmission": "Automatic",
+                  "fuel_type": "Gasoline",
+                  "body_style": "Sedan",
+                  "description": "The 2023 BMW 3 Series G20 offers cutting-edge performance and luxury in a compact sedan. Featuring a turbocharged 2.0L I4 engine, advanced driver-assist features, and a premium interior, it delivers the ultimate driving experience.",
+                  "availability": "Available",
+                  "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-733156fayVOhiL0onTdzmlDCRwzky2o3eED89R8yMu2j3D%253bvwjdnu3xFdmzL1VUDyeONayVybykonvIT9aACO2B3iuZZIjedwsQRBDMztVGeeqhk7BSHMLoACefYhJHFl7Ltou%25KXC1ZHSfWQxC%25%25V1PaXGmfNEbnURJ10s9Ol5NE4riIXU4scZwBQ1urxRteIgOZ857Mr1xRUgChDjX5GvloqVdgp2XHLdXv6jQ%25JE82YDafuiAjmqn1SwtDyLOExVuqTJIs8fzL3uBrU2VJdSeZLimuzVMRJGjSkNh5uyVVA0ogSATNF4HvVmN0Kc%252Z9%254WxfjRLUcP81D5PAxbUEqcNA89GsLlDMUiprJkisGw6ZuLyVptYAYjpz4f9cJo34Ws1Bo%25fA3FSr6vO%25yXqdF1keTjHzcMKr3aJzMxQUdqfoZciptvmshU3sR7ayV8bWhsdNWL3hZtUDQGxbZ35BjkeTjHq0MvUi5AekxVA71HsscC4D5gvrt3H9NvJ7Q6TeJnvzsCZnK8Y5lkBo7sYJNbjWNR7ron3aJBZswUrb4g7c4"
+                },
+                {
+                  "make": "Mercedes-Benz",
+                  "model": "E-Class",
+                  "year": 2024,
+                  "vin": "WDDZF4JB5KA123456",
+                  "price": 55000,
+                  "mileage": 0,
+                  "color": "Obsidian Black",
+                  "engine_type": "2.0L I4 Turbo Mild Hybrid",
+                  "transmission": "Automatic",
+                  "fuel_type": "Hybrid",
+                  "body_style": "Sedan",
+                  "description": "The 2024 Mercedes-Benz E-Class combines sophisticated luxury with state-of-the-art technology. Powered by a 2.0L I4 turbocharged engine with a mild hybrid system, it offers exceptional performance and efficiency along with a spacious, tech-laden interior.",
+                  "availability": "Reserved",
+                  "image": "https://vehicle-images.dealerinspire.com/0f7f-110005924/W1KLF4HB2RA032342/5d016ba40a50a130aca1251fe9024ad3.jpg"
+                },
+                {
+                  "make": "Toyota",
+                  "model": "Corolla",
+                  "year": 2022,
+                  "vin": "1HGCM82633A123456",
+                  "price": 23000,
+                  "mileage": 15000,
+                  "color": "Blue",
+                  "engine_type": "1.8L I4",
+                  "transmission": "Automatic",
+                  "fuel_type": "Gasoline",
+                  "body_style": "Sedan",
+                  "description": "The Toyota Corolla 2022 is a reliable, fuel-efficient sedan with excellent handling, a spacious interior, and advanced safety features.",
+                  "availability": "Sold",
+                  "image": "https://di-enrollment-api.s3.amazonaws.com/toyota/models/2022/corolla/trims/LE.jpg"
+                }
+              ]
+
+
+result:
+  cars: <? cars_api_response ?>

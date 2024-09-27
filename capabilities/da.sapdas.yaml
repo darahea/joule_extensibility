@@ -9,3 +9,5 @@ capabilities:
     folder: ./products
   - type: local
     folder: ./employees
+  - type: local
+    folder: ./cars

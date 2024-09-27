@@ -1,9 +1,0 @@
-description: This function shows employees info with ability to select one of them
-
-target:
-  type: function
-  name: get_employees_for_selection
-
-response_context:
-  - value: employees
-    description: peer employees
