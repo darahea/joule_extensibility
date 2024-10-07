@@ -6,34 +6,34 @@ action_groups:
             value:
               [
                 {
-                  "make": "BMW",
-                  "model": "3 Series G20",
+                  "brand": "BMW",
+                  "category": "Electric Car",
                   "year": 2023,
                   "vin": "WBA5R1C56LF123456",
                   "price": 42000,
                   "mileage": 5000,
                   "color": "Alpine White",
-                  "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-733156fayVOhiL0onTdzmlDCRwzky2o3eED89R8yMu2j3D%253bvwjdnu3xFdmzL1VUDyeONayVybykonvIT9aACO2B3iuZZIjedwsQRBDMztVGeeqhk7BSHMLoACefYhJHFl7Ltou%25KXC1ZHSfWQxC%25%25V1PaXGmfNEbnURJ10s9Ol5NE4riIXU4scZwBQ1urxRteIgOZ857Mr1xRUgChDjX5GvloqVdgp2XHLdXv6jQ%25JE82YDafuiAjmqn1SwtDyLOExVuqTJIs8fzL3uBrU2VJdSeZLimuzVMRJGjSkNh5uyVVA0ogSATNF4HvVmN0Kc%252Z9%254WxfjRLUcP81D5PAxbUEqcNA89GsLlDMUiprJkisGw6ZuLyVptYAYjpz4f9cJo34Ws1Bo%25fA3FSr6vO%25yXqdF1keTjHzcMKr3aJzMxQUdqfoZciptvmshU3sR7ayV8bWhsdNWL3hZtUDQGxbZ35BjkeTjHq0MvUi5AekxVA71HsscC4D5gvrt3H9NvJ7Q6TeJnvzsCZnK8Y5lkBo7sYJNbjWNR7ron3aJBZswUrb4g7c4"
+                  "image": "https://github.tools.sap/DAS-Samples/joule-functions-example/blob/fb_enhanced-message-generation/capabilities/cars/assets/car1.jpg"
                 },
                 {
-                  "make": "Mercedes-Benz",
-                  "model": "E-Class",
+                  "make": "Audi",
+                  "model": "Limousine",
                   "year": 2024,
                   "vin": "WDDZF4JB5KA123456",
                   "price": 55000,
                   "mileage": 0,
-                  "color": "Obsidian Black",
-                  "image": "https://vehicle-images.dealerinspire.com/0f7f-110005924/W1KLF4HB2RA032342/5d016ba40a50a130aca1251fe9024ad3.jpg"
+                  "color": "White",
+                  "image": "https://github.tools.sap/DAS-Samples/joule-functions-example/blob/fb_enhanced-message-generation/capabilities/cars/assets/car2.jpg"
                 },
                 {
-                  "make": "Toyota",
-                  "model": "Corolla",
+                  "make": "Mercedes Benz",
+                  "model": "Sports Car",
                   "year": 2022,
                   "vin": "1HGCM82633A123456",
                   "price": 23000,
                   "mileage": 15000,
-                  "color": "Blue",
-                  "image": "https://di-enrollment-api.s3.amazonaws.com/toyota/models/2022/corolla/trims/LE.jpg"
+                  "color": "Silver",
+                  "image": "https://github.tools.sap/DAS-Samples/joule-functions-example/blob/fb_enhanced-message-generation/capabilities/cars/assets/car3.jpg"
                 }
               ]
 

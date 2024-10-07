@@ -15,7 +15,7 @@ action_groups:
                   "job_title": "Software Developer",
                   "job_description": "Responsible for designing, coding, and maintaining software applications. Collaborates with cross-functional teams to define, design, and ship new features. Ensures the performance, quality, and responsiveness of applications.",
                   "availability": "available",
-                  "image": "https://as2.ftcdn.net/v2/jpg/03/64/21/11/1000_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg"
+                  "image": "https://raw.github.tools.sap/DAS-Samples/joule-functions-example/fb_enhanced-message-generation/capabilities/employees/assets/employee_profile1.png?token=GHSAT0AAAAAAAAOCSATW3QKJBU5MCM75PUOZYNADOQ"
                 },
                 {
                   "first_name": "Jane",
@@ -27,7 +27,7 @@ action_groups:
                   "job_title": "DevOps Engineer",
                   "job_description": "Works on deployment and network operations. Helps to automate and streamline the company’s operations and processes. Ensures the reliability and scalability of applications.",
                   "availability": "out of office",
-                  "image": "https://www.corporatephotographylondon.com/wp-content/uploads/2019/11/HKstrategies-1210-1024x683.jpg"
+                  "image": "https://raw.github.tools.sap/DAS-Samples/joule-functions-example/fb_enhanced-message-generation/capabilities/employees/assets/employee_profile2.jpg?token=GHSAT0AAAAAAAAOCSAS4CCHZ4PTZZ7INRNSZYNAEHA"
                 },
                 {
                   "first_name": "Alice",
