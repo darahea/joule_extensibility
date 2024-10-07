@@ -27,7 +27,7 @@ action_groups:
                   "job_title": "DevOps Engineer",
                   "job_description": "Works on deployment and network operations. Helps to automate and streamline the company’s operations and processes. Ensures the reliability and scalability of applications.",
                   "availability": "out of office",
-                  "image": "https://raw.github.tools.sap/DAS-Samples/joule-functions-example/fb_enhanced-message-generation/capabilities/employees/assets/employee_profile2.jpg?token=GHSAT0AAAAAAAAOCSAS4CCHZ4PTZZ7INRNSZYNAEHA"
+                  "image": "https://raw.github.tools.sap/DAS-Samples/joule-functions-example/fb_enhanced-message-generation/capabilities/employees/assets/employee_profile2.jpg?token=GHSAT0AAAAAAAAOCSATBU3IKTYATPOFYEZOZYNAOYQ"
                 },
                 {
                   "first_name": "Alice",

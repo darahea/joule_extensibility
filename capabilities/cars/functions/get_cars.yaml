@@ -13,27 +13,27 @@ action_groups:
                   "price": 42000,
                   "mileage": 5000,
                   "color": "Alpine White",
-                  "image": "https://github.tools.sap/DAS-Samples/joule-functions-example/blob/fb_enhanced-message-generation/capabilities/cars/assets/car1.jpg"
+                  "image": "https://raw.github.tools.sap/DAS-Samples/joule-functions-example/fb_enhanced-message-generation/capabilities/cars/assets/car1.jpg?token=GHSAT0AAAAAAAAOCSAS6MFPW7MA37H6NO6EZYNDXMA"
                 },
                 {
-                  "make": "Audi",
-                  "model": "Limousine",
+                  "brand": "Audi",
+                  "category": "Limousine",
                   "year": 2024,
                   "vin": "WDDZF4JB5KA123456",
                   "price": 55000,
                   "mileage": 0,
                   "color": "White",
-                  "image": "https://github.tools.sap/DAS-Samples/joule-functions-example/blob/fb_enhanced-message-generation/capabilities/cars/assets/car2.jpg"
+                  "image": "https://raw.github.tools.sap/DAS-Samples/joule-functions-example/fb_enhanced-message-generation/capabilities/cars/assets/car2.jpg?token=GHSAT0AAAAAAAAOCSAS7QI3WT2FN5JN4OQGZYNDXYA"
                 },
                 {
-                  "make": "Mercedes Benz",
-                  "model": "Sports Car",
+                  "brand": "Mercedes Benz",
+                  "category": "Sports Car",
                   "year": 2022,
                   "vin": "1HGCM82633A123456",
                   "price": 23000,
                   "mileage": 15000,
                   "color": "Silver",
-                  "image": "https://github.tools.sap/DAS-Samples/joule-functions-example/blob/fb_enhanced-message-generation/capabilities/cars/assets/car3.jpg"
+                  "image": "https://raw.github.tools.sap/DAS-Samples/joule-functions-example/fb_enhanced-message-generation/capabilities/cars/assets/car3.jpg?token=GHSAT0AAAAAAAAOCSASRDIX3BXBBE4BCOUKZYNDYEA"
                 }
               ]
 
