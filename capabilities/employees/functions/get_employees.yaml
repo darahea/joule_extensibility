@@ -15,7 +15,7 @@ action_groups:
                   "job_title": "Software Developer",
                   "job_description": "Responsible for designing, coding, and maintaining software applications. Collaborates with cross-functional teams to define, design, and ship new features. Ensures the performance, quality, and responsiveness of applications.",
                   "availability": "available",
-                  "image": "https://raw.github.tools.sap/DAS-Samples/joule-functions-example/fb_enhanced-message-generation/capabilities/employees/assets/employee_profile1.png?token=GHSAT0AAAAAAAAOCSATW3QKJBU5MCM75PUOZYNADOQ"
+                  "image": "https://raw.github.tools.sap/DAS-Samples/joule-functions-example/fb_enhanced-message-generation/capabilities/employees/assets/employee_profile1.png?token=GHSAT0AAAAAAAAOCSATTHJRDF76WQOYAZGOZYNALIQ"
                 },
                 {
                   "first_name": "Jane",
