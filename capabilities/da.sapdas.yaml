@@ -1,5 +1,5 @@
 schema_version: 1.0.0
-name: joule_assistant_list
+name: test_assistant
 capabilities:
   - type: local
     folder: ./helloworld
@@ -11,3 +11,6 @@ capabilities:
     folder: ./employees
   - type: local
     folder: ./cars
+  - type: local
+    folder: ./appreciate_capability_developer
+
