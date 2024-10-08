@@ -8,4 +8,9 @@ capabilities:
   - type: local
     folder: ./products
   - type: local
+    folder: ./employees
+  - type: local
+    folder: ./cars
+  - type: local
     folder: ./appreciate_capability_developer
+
