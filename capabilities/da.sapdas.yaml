@@ -1,4 +1,5 @@
 schema_version: 1.0.0
+name: test_assistant
 capabilities:
   - type: local
     folder: ./helloworld
@@ -6,3 +7,5 @@ capabilities:
     folder: ./weather_response_gen
   - type: local
     folder: ./products
+  - type: local
+    folder: ./appreciate_capability_developer
