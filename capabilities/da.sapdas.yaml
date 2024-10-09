@@ -4,13 +4,10 @@ capabilities:
   - type: local
     folder: ./helloworld
   - type: local
-    folder: ./weather_response_gen
+    folder: ./weather
   - type: local
     folder: ./products
   - type: local
     folder: ./employees
   - type: local
-    folder: ./cars
-  - type: local
     folder: ./appreciate_capability_developer
-

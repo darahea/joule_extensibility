@@ -13,10 +13,11 @@ If you want to adapt or build content on your own, consider the [SAP Help docume
 ```
 └── capabilities/ // assistant root
     ├── da.sapdas.yaml  // assistant definition combining capabilities
-    ├── appreciate_capability_developer // assistant leveraging context variables
-    ├── helloworld/ // a very simple hello world capability
-    ├── weather/ // a capability calling an external API
-    └── products/ // a more comeplex example showing products from an OData service
+    ├── appreciate_capability_developer // a capability leveraging context variables
+    ├── employee // a capability showing employee data with enhanced response generation
+    ├── helloworld // a very simple hello world capability
+    ├── weather // a capability calling an external weather API and presenting results via response generation
+    └── products // a more complex example showing products from an OData service
     
 ```
 

@@ -1,9 +1,0 @@
-description: This function shows cars info
-
-target:
-  type: function
-  name: get_cars
-
-response_context:
-  - value: cars
-    description: cars info
