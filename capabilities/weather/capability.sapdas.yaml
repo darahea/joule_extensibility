@@ -9,4 +9,4 @@ metadata:
 
 system_aliases:
   WeatherService:
-   destination: WEATHER
+    destination: WEATHER

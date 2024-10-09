@@ -17,7 +17,7 @@ If you want to adapt or build content on your own, consider the [SAP Help docume
     ├── employee // a capability showing employee data with enhanced response generation
     ├── helloworld // a very simple hello world capability
     ├── weather // a capability calling an external weather API and presenting results via response generation
-    └── products // a more comeplex example showing products from an OData service
+    └── products // a more complex example showing products from an OData service
     
 ```
 
