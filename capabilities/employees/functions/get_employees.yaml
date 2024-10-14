@@ -15,7 +15,7 @@ action_groups:
                   "job_title": "Software Developer",
                   "job_description": "Responsible for designing, coding, and maintaining software applications. Defines, designes and ships new features. Ensures the performance, quality, and responsiveness of applications.",
                   "availability": "available",
-                  "image": "https://raw.github.tools.sap/DAS-Samples/joule-functions-example/fb_enhanced-message-generation/capabilities/employees/assets/employee_profile1.png?token=GHSAT0AAAAAAAAOCSATTHJRDF76WQOYAZGOZYNALIQ"
+                  "image": "https://raw.github.tools.sap/DAS-Samples/joule-functions-example/main/capabilities/employees/assets/employee_profile1.png?token=GHSAT0AAAAAAAAOEBLGXQHASE2TZVKLEMU2ZYWA6IQ"
                 },
                 {
                   "first_name": "Jane",
@@ -27,7 +27,7 @@ action_groups:
                   "job_title": "DevOps Engineer",
                   "job_description": "Works on deployment and network operations. Helps to automate and streamline the company’s operations and processes. Ensures the reliability and scalability of applications.",
                   "availability": "out of office",
-                  "image": "https://raw.github.tools.sap/DAS-Samples/joule-functions-example/fb_enhanced-message-generation/capabilities/employees/assets/employee_profile2.jpg?token=GHSAT0AAAAAAAAOCSATBU3IKTYATPOFYEZOZYNAOYQ"
+                  "image": "https://raw.github.tools.sap/DAS-Samples/joule-functions-example/main/capabilities/employees/assets/employee_profile2.jpg?token=GHSAT0AAAAAAAAOEBLGW54JCVPIQXKPMM6EZYWA7PA"
                 },
                 {
                   "first_name": "Alice",
