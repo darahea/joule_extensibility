@@ -1,8 +1,0 @@
-schema_version: 3.3.0
-
-metadata:
-  namespace: com.sap.das.demo
-  name: show_employees_example
-  version: 1.0.1
-  display_name: "Show Employees Capability"
-  description: Shows employees information.
